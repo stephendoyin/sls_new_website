@@ -1,2 +1,13 @@
 @import 'normalize.css';
 @import 'global/_global.css';
+@import 'modules/_header.css';
+@import 'modules/_menu_bar.css';
+@import 'modules/_header-content.css';
+@import 'modules/_btn.css';
+@import 'modules/_home-about.css';
+@import 'modules/_paper.css';
+@import 'modules/_card.css';
+@import 'modules/_container.css';
+@import 'modules/_stories.css';
+@import 'modules/_testimonials.css';
+@import 'modules/_footer.css';

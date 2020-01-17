@@ -1,0 +1,17 @@
+.container{
+    width: 100%;
+
+    &__gradient{
+        background: linear-gradient(180deg, #FFFEFE 0%, rgba(247, 248, 250, 0) 100%);
+        padding: 20px 0 60px 0;
+    }
+
+    &__moved{
+        transform: translateY(60px);
+    }
+
+    &__white{
+        background: #ffffff;
+        padding: 80px 0;
+    }
+}

@@ -1,4 +1,3 @@
-import Scripts from './modules/_first';
+// import Scripts from './modules/_first';
 
 
-let scripts = new Scripts();

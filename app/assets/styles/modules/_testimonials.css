@@ -1,0 +1,42 @@
+.testimonials{
+    /* min-width: 45%; */
+    background: #ffffff;
+    box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.12);
+    border-radius: 14px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-right: 30px;
+
+    &__section{
+        width: 100%;
+        overflow: hidden;
+        padding: 50px 0 100px 0;
+    }
+
+    &__container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    &__text{
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 30px;
+    }
+
+    &__footer{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-weight: 600;
+        margin-top: 16px;
+    }
+
+    &__avatar{
+        margin-right: 30px;
+        width: 60px;
+    }
+}

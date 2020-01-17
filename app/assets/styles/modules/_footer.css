@@ -1,0 +1,114 @@
+.footer{
+
+    &__form{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 90px rgba(0, 0, 0, 0.05);
+        border-radius: 60px 7px 60px 7px;
+    }
+    
+    &__label{
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, .45);
+        padding: 7px 70px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    &__input{
+        width: 90%;
+        padding: 18px 86px;
+        border-radius: 39px;
+        border: none; 
+        background: linear-gradient(#fff, #fff);
+        font-size: 1.1rem;
+
+        &:focus{
+            outline: none;
+        }
+
+        &__icon{
+            position: absolute;
+            left: 9%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+        }
+
+        &__submit{
+            cursor: pointer;
+            position: absolute;
+            right: 55px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ED1C25;
+            padding: 10px 50px;
+            border-radius: 60px;
+            border: none;
+            color: #fff;
+        }
+
+        &__container{
+            position: relative;
+            background: #ED1C25;
+            border-radius: 0 7px 60px 0;
+            height: 97px;
+            width: 57%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__container{
+        padding-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        
+
+
+        &__title{
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #ED1C25;
+            padding-bottom: 25px;
+        }
+
+        &__item{
+            width: 28%;
+        }
+
+        &__text{
+            font-size: 1.1rem;
+            font-weight: 400;
+            line-height: normal;
+            color: #626262;
+        }
+
+        &__link:link, &__link:visited{
+            display: block;
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: #626262;
+            padding-bottom: 22px;
+        }
+
+        &__flex{
+            padding-bottom: 26px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: #626262;
+
+            img{
+                width: 30px;
+                margin-right: 50px;
+            }
+        }
+    }
+}

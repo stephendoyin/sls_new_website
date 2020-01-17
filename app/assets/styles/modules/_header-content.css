@@ -1,0 +1,41 @@
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &>div{
+        width: 50%;
+
+        &:last-child{
+            text-align: right;
+        }
+    }
+
+    &__title{
+        font-size: 4.5rem;
+        font-family: 'Playfair Display', serif;
+        color: #ED1C25;
+        font-style: italic;
+        font-weight: 900;
+        padding-bottom: 20px;
+    }
+
+    &__txt{
+        font-family: Poppins;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 150.4%;
+        color: #333;
+        padding-bottom: 30px;
+    }
+
+    &__img{
+        width: 80%;
+        
+    }
+}

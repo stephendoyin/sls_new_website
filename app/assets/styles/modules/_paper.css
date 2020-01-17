@@ -1,0 +1,28 @@
+.paper{
+    background: #fff;
+    width: 31.8%;
+    height: 250px;
+    border-top: 4px solid #ED1C25;
+    border-radius: 4px 4px 7px 7px;
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 36px 30px 20px 30px;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    span{
+        color: #ED1C25;
+        font-weight: 600;
+        padding-top: 28px;
+        font-size: 3rem;
+    }
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        padding: 80px 0;
+
+    }
+}
