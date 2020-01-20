@@ -6,7 +6,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 10px;
     margin: 0;
     padding: 0;
     color: black;
@@ -14,23 +14,23 @@ html {
     background-color: #F7F8FA;
 }
 
-body.fixed{
+body.fixed {
     height: 100vh;
     overflow: hidden;
 }
 
-.row{
+.row {
     width: 85%;
     margin: 0 auto;
 }
 
-.link:link, .link:visited{
+.link:link,
+.link:visited {
     display: block;
     text-decoration: none;
     color: #ED1C25;
     font-size: 1.1rem;
-
-    span{
+    span {
         margin-left: 22px;
         height: 100%;
         display: inline-flex;
@@ -38,35 +38,84 @@ body.fixed{
         vertical-align: middle;
         margin-bottom: 2px;
         transition: margin .2s ease-in-out;
+        img {
+            width: 24px;
+        }
     }
 }
 
-.link:link:hover{
-    span{
-        margin-left: 32px;
+.link:link:hover {
+    span {
+        margin-left: 20px;
     }
 }
 
-
-.title{
+.title {
     font-weight: 300;
     font-size: 1.5rem;
     text-transform: uppercase;
     padding-bottom: 22px;
     color: #ED1C25;
-    
-    &__sub{
+    position: relative;
+    white-space: nowrap;
+    &__sub {
         font-weight: 600;
         font-size: 1.2rem;
         line-height: 2rem;
         padding-bottom: 26px;
         color: #333;
-
-        &__smaller{
+        &__smaller {
             font-family: Roboto, Arial, Helvetica, sans-serif;
             font-weight: 700;
             padding: 0;
             margin: 0;
         }
+    }
+    &::before {
+        display: inline-block;
+        content: "";
+        height: 1px;
+        width: 50px;
+        background-color: #ED1C25;
+        vertical-align: middle;
+        margin-right: 16px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+    .title::before {
+        width: 90px;
+        display: inline-block;
+        content: "";
+        height: 1px;
+        background-color: #ED1C25;
+        vertical-align: middle;
+        margin-right: 16px;
+    }
+    .link:link span img,
+    .link:visited span img {
+        width: 30px;
+    }
+}
+
+@media only screen and (min-width: 920px) {
+    html {
+        font-size: 16px;
+    }
+    .title::before {
+        width: 110px;
+        display: inline-block;
+        content: "";
+        height: 1px;
+        background-color: #ED1C25;
+        vertical-align: middle;
+        margin-right: 16px;
+    }
+    .link:link span img,
+    .link:visited span img {
+        width: 35px;
     }
 }

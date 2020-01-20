@@ -1,0 +1,110 @@
+.team {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin-bottom: 45px;
+    flex-direction: column;
+    &s {
+        h2.title {
+            padding-bottom: 60px;
+        }
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 15px;
+        flex-wrap: wrap;
+    }
+    &__img {
+        /* border: 1px solid #000000; */
+        width: 40%;
+        margin-right: 22px;
+        margin-bottom: 20px;
+        align-self: flex-start;
+    }
+    &__content {
+        .link:link,
+        .link:visited {
+            font-size: 1.2rem;
+            span {
+                img {
+                    width: 25px;
+                }
+            }
+        }
+        &__text {
+            line-height: 30px;
+            font-size: 1.2rem;
+            padding-bottom: 19px;
+            color: rgba(0, 0, 0, .7);
+            &__dots {
+                display: inline;
+            }
+            &__more {
+                display: none;
+            }
+        }
+        &__title {
+            font-weight: 400;
+            text-transform: uppercase;
+            border-bottom: 1px solid #333;
+            font-size: 1.3rem;
+            padding-bottom: 5px;
+            margin-bottom: 9px;
+            display: inline-block;
+            &__sub {
+                font-weight: 700;
+                color: #ED1C25;
+                text-transform: capitalize;
+                font-size: 1.2rem;
+                padding-bottom: 8px;
+                span {
+                    text-transform: lowercase;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .team__content__text__more {
+        display: inline;
+    }
+    .team__content__text__dots {
+        display: none;
+    }
+    .team__content .link:link span img,
+    .team__content .link:visited span img {
+        width: 30px;
+    }
+}
+
+@media only screen and (min-width: 1176px) {
+    .team {
+        width: 48%;
+        margin-bottom: 0;
+    }
+    .team__content__text__more {
+        display: none;
+    }
+    .team__content__text__dots {
+        display: inline;
+    }
+    .team__content .link:link span img,
+    .team__content .link:visited span img {
+        width: 40px;
+    }
+}
+
+@media only screen and (min-width: 520px) {
+    .team {
+        flex-direction: row;
+    }
+    .team__img {
+        width: 30%;
+        margin-bottom: 0px;
+    }
+}

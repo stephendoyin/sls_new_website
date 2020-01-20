@@ -1,23 +1,20 @@
-.stories{
-
-    width: 29%;
+.stories {
+    width: 100%;
     position: relative;
-
-    &__container{
+    margin: 30px 0;
+    &__container {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         width: 100%;
-
+        flex-wrap: wrap;
     }
-
-    &__img{
+    &__img {
         width: 100%;
         top: 0;
         transform: translate(8%, 10%);
         box-shadow: 0px 4px 39px rgba(0, 0, 0, 0.15);
-
-        &__container{
+        &__container {
             width: 92%;
             background: #ED1C25;
             border-radius: 40px;
@@ -25,24 +22,33 @@
             /* position: relative; */
         }
     }
-
-    &__time-stamp{
-       vertical-align: bottom; 
+    &__time-stamp {
+        vertical-align: bottom;
     }
-
-    &__title{
+    &__title {
         padding-top: 38px;
         font-size: 1.3rem;
         font-weight: 600;
         line-height: normal;
         height: 70px;
     }
-
-    &__footer{
+    &__footer {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         width: 100%;
         margin-top: 26px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .stories {
+        width: 47%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .stories {
+        width: 29%;
     }
 }

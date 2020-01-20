@@ -1,57 +1,60 @@
-.card{
+.card {
     background-color: #ffffff;
     box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.12);
     border-radius: 14px;
-    width: 31%;
+    width: 100%;
     padding: 30px;
-    margin-right: 3%;
-
-    &__inner-container{
+    padding-bottom: 70px;
+    margin-right: 0%;
+    margin-bottom: 30px;
+    position: relative;
+    .link:link,
+    .link:visited {
         position: absolute;
         bottom: 30px;
+        right: 30px;
+    }
+    &__inner-container {
+        position: relative;
         left: 0;
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: space-between;
+        align-items: stretch;
         width: 100%;
+        padding-top: 94px;
+        flex-wrap: wrap;
     }
-
-    &__container{
+    &__container {
         display: flex;
         justify-content: flex-end;
         position: relative;
         width: 100%;
     }
-
-    &__title{
+    &__title {
         font-size: 1.3rem;
         color: #4d4d4d;
         padding-bottom: 16px;
     }
-
-    &__text{
+    &__text {
         font-size: 1.2rem;
         font-weight: 400;
         color: rgba(0, 0, 0, 0.5);
         line-height: normal;
     }
-
-    &__icon{
+    &__icon {
         padding-bottom: 16px;
     }
-
-    &__link{
+    &__link {
         padding-top: 16px;
     }
-
-    &__bg{
+    &__bg {
         height: 60vh;
         width: 40%;
         background: #ED1C25;
         border-radius: 43px;
         position: relative;
-
-        div{
+        display: none;
+        div {
             border: 1px solid #ffffff;
             background: transparent;
             height: 100%;
@@ -61,5 +64,28 @@
             left: 5%;
             border-radius: 43px;
         }
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .card {
+        width: 48%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .card {
+        margin-right: 3%;
+        width: 31.5%;
+        margin-bottom: 0;
+    }
+    .card__bg {
+        display: block;
+    }
+    .card__inner-container {
+        position: absolute;
+        padding-top: 30px;
+        bottom: 50px;
+        flex-wrap: nowrap;
     }
 }

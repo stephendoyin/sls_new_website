@@ -1,34 +1,43 @@
-.menu{
+.menu {
     height: 100px;
     position: relative;
-
-    &__inner{
+    &__inner {
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    
-    &__link:link, &__link:visited{
+    &__right-item {
+        display: none;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &__link:link,
+    &__link:visited {
         text-decoration: none;
         color: #FF0000;
         margin-left: 60px;
         position: relative;
+        display: inline-block;
     }
-
-    &__link--active:link, &__link--active:visited{
+    &__link--active:link,
+    &__link--active:visited {
         color: #000000;
     }
-
-    &__link--active:link::after{
-        display: block;
+    &__link--active:link::before {
         content: "";
         height: 1.5px;
-        width: 120%;
+        width: calc(100% + 10px);
         background: #000;
+        vertical-align: middle;
         position: absolute;
-        top: 50%;
-        left: calc(100% - 55px);
+        top: 9px;
+        left: -5px;
     }
-    
+}
+
+@media only screen and (min-width: 1100px) {
+    .menu__right-item {
+        display: flex;
+    }
 }

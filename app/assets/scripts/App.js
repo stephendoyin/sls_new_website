@@ -1,3 +1,6 @@
-// import Scripts from './modules/_first';
+import Slider from './modules/Sliders';
+
+
+let slider = new Slider();
 
 

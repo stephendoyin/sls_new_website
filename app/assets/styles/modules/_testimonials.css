@@ -1,5 +1,5 @@
-.testimonials{
-    /* min-width: 45%; */
+.testimonials {
+    min-width: 500px;
     background: #ffffff;
     box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.12);
     border-radius: 14px;
@@ -8,35 +8,42 @@
     justify-content: space-between;
     flex-direction: column;
     margin-right: 30px;
-
-    &__section{
+    &__section {
         width: 100%;
         overflow: hidden;
         padding: 50px 0 100px 0;
     }
-
-    &__container{
+    &__container {
         display: flex;
         justify-content: flex-start;
         align-items: stretch;
     }
-
-    &__text{
+    &__text {
         font-size: 1.2rem;
         font-weight: 300;
         line-height: 30px;
     }
-
-    &__footer{
+    &__footer {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         font-weight: 600;
         margin-top: 16px;
     }
-
-    &__avatar{
+    &__avatar {
         margin-right: 30px;
         width: 60px;
+    }
+}
+
+@media only screen and (min-width: 820px) {
+    .testimonials {
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .testimonials {
+        width: 600px;
     }
 }
