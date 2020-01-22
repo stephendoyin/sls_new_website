@@ -19,6 +19,7 @@
         text-align: center;
         width: 100%;
         white-space: nowrap;
+        margin-bottom: 34px;
     }
     &__input {
         width: 90%;
@@ -103,8 +104,8 @@
             align-items: center;
             color: #626262;
             img {
-                width: 22px;
-                margin-right: 30px;
+                width: 16px;
+                margin-right: 16px;
             }
             span {
                 line-height: normal;
@@ -114,7 +115,7 @@
     &__social__icons {
         padding-top: 28px;
         img {
-            height: 22px;
+            height: 17px;
         }
         a:link,
         a:visited {
@@ -139,7 +140,7 @@
         border-radius: 0px 7px 60px 0;
     }
     .footer__label {
-        margin-bottom: 34px;
+        margin-bottom: 0px;
         padding: 7px 70px;
         width: 50%;
     }
@@ -158,6 +159,10 @@
     .footer__input__submit {
         padding: 10px 50px;
     }
+    .footer__container__flex img {
+        width: 18px;
+        margin-right: 20px;
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -172,5 +177,12 @@
     .footer__container__item:nth-child(3) {
         width: 32%;
         margin-bottom: 0;
+    }
+    .footer__container__flex img {
+        width: 23px;
+        margin-right: 30px;
+    }
+    .footer__social__icons img {
+        height: 17px;
     }
 }

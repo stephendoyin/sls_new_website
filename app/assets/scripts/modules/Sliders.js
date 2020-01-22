@@ -1,15 +1,25 @@
-import Swiper from 'swiper/js/swiper.js';
+import Swiper from 'swiper/js/swiper';
+import Siema from 'siema/dist/siema.min';
 import { isNull } from 'util';
 
 class Slider {
     constructor() {
         this.testimonialContainer = document.querySelector(".testimonials__wrapper");
+        this.siema = document.querySelector('.siema');
+        this.prev = document.querySelector('.prev');
+        this.next = document.querySelector('.next');
+        this.dot = document.querySelectorAll('.dot');
         if (!(isNull(this.testimonialContainer))) {
-            this.startLider();
+            this.startsLider();
         }
+
+        if (!(isNull(this.siema))) {
+            this.startsLiderTwo();
+        }
+
     }
 
-    startLider() {
+    startsLider() {
         let swiper = new Swiper(this.testimonialContainer, {
             slidesPerView: 3,
             // autoplay: {
@@ -28,6 +38,47 @@ class Slider {
             },
         })
     }
+
+    startsLiderTwo() {
+        const si = new Siema({
+            selector: '.siema',
+            perPage: 1,
+            loop: true,
+            duration: 200,
+            onInit() {
+                const dot = document.querySelectorAll('.dot');
+                dot.forEach((element, i) => {
+                    element.classList.remove('active');
+                    element.addEventListener('click', function() {
+                        si.goTo(i);
+                    })
+                });
+                console.log(this)
+                dot[this.currentSlide].classList.add('active');
+
+
+
+
+            },
+            onChange() {
+                const dot = document.querySelectorAll('.dot');
+                dot.forEach(element => {
+                    element.classList.remove('active');
+                });
+                dot[this.currentSlide].classList.add('active');
+
+            },
+        });
+
+
+
+
+
+
+    }
+
+
+
 
 }
 

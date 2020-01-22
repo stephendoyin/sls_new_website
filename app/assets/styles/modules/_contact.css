@@ -1,0 +1,80 @@
+.contact {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    &__section {
+        padding: 80px 0;
+    }
+    &__inner__map {
+        box-shadow: 0px 4px 39px rgba(0, 0, 0, 0.19);
+        height: 300px;
+        width: 100%;
+    }
+    &__map {
+        position: relative;
+        width: 100%;
+        margin-left: 0%;
+    }
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 30px;
+        &__img {
+            width: 16px;
+            margin-right: 20px;
+            margin-top: 3px;
+        }
+        &s {
+            margin-top: 60px;
+        }
+    }
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 300px;
+    width: 100%
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+    height: 300px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1052px) {
+    .mapouter {
+        height: 500px;
+    }
+    .gmap_canvas {
+        height: 500px;
+    }
+    .contact__inner__map {
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width: 820px) {
+    .contact__map {
+        width: 60%;
+        margin-left: 10%;
+    }
+    .contact {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 520px) {
+    .contact__inner__map {
+        height: 500px;
+    }
+    .mapouter {
+        height: 500px;
+    }
+    .gmap_canvas {
+        height: 500px;
+    }
+}

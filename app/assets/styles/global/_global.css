@@ -119,3 +119,9 @@ body.fixed {
         width: 35px;
     }
 }
+
+@media only screen and (min-width: 1680px) {
+    .row {
+        width: 1440px;
+    }
+}

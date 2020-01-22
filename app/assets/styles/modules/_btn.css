@@ -1,26 +1,25 @@
-.btn{
+.btn {
     padding: 15px 30px;
     border: 1px solid #000000;
     position: relative;
     color: #f00;
     font-size: 1.1875rem;
     border-radius: 19px;
-
-    &:link, &:visited{
+    &:link,
+    &:visited {
         text-decoration: none;
         text-transform: uppercase;
         color: #ff0000;
         position: relative;
         display: inline-block;
+        white-space: nowrap;
     }
-
-    &:link:hover{
-        span{
+    &:link:hover {
+        span {
             margin-left: 32px;
         }
     }
-
-    span{
+    span {
         margin-left: 22px;
         height: 100%;
         display: inline-flex;
