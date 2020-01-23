@@ -1,0 +1,64 @@
+.header__slider__inner.first {
+    background: url(../../assets/images/hero-one.png);
+    background-position: top center;
+    background-size: cover;
+}
+
+.header__slider__inner.second {
+    background: url(../../assets/images/hero-two.png);
+    background-position: top center;
+    background-size: cover;
+}
+
+.header__slider__inner.third {
+    background: url(../../assets/images/hero-three.png);
+    background-position: top center;
+    background-size: cover;
+}
+
+.header-about {
+    .header__slider__inner {
+        background: url(../../assets/images/about-bg.png);
+        background-position: top center;
+        background-size: cover;
+    }
+}
+
+.header-product {
+    .header__slider__inner {
+        background: url(../../assets/images/product-p.png);
+        background-position: top center;
+        background-size: cover;
+    }
+}
+
+.header-contact {
+    .header__slider__inner {
+        background: url(../../assets/images/contact-bgg.png);
+        background-position: top right;
+        background-size: cover;
+    }
+}
+
+.header-stories {
+    .header__slider__inner {
+        background: url(../../assets/images/stories-bg.png);
+        background-position: top center;
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .header__slider__inner.first {
+        background: transparent;
+    }
+    .header__slider__inner.second {
+        background: transparent;
+    }
+    .header__slider__inner.third {
+        background: transparent;
+    }
+    .header .header__slider__inner {
+        background: transparent;
+    }
+}

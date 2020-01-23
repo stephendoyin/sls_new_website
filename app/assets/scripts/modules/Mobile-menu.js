@@ -23,6 +23,8 @@ class MobileMenu {
             })
         });
 
+
+
     }
 
     //prevent active link

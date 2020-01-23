@@ -44,7 +44,8 @@ class Slider {
             selector: '.siema',
             perPage: 1,
             loop: true,
-            duration: 200,
+            duration: 500,
+
             onInit() {
                 const dot = document.querySelectorAll('.dot');
                 dot.forEach((element, i) => {
@@ -53,13 +54,15 @@ class Slider {
                         si.goTo(i);
                     })
                 });
-                console.log(this)
+                setInterval(() => {
+                    this.next();
+
+                }, 12000)
                 dot[this.currentSlide].classList.add('active');
 
 
-
-
             },
+
             onChange() {
                 const dot = document.querySelectorAll('.dot');
                 dot.forEach(element => {
