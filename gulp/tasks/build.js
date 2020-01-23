@@ -8,7 +8,7 @@ var gulp = require('gulp'),
     { series } = require('gulp');
 
 
-gulp.task('previewDist', function () {
+gulp.task('previewDist', function() {
     browserSync.init({
         notify: false,
         server: {
@@ -17,14 +17,18 @@ gulp.task('previewDist', function () {
     });
 });
 
-gulp.task('deleteDistFolder', function () {
+gulp.task('deleteDistFolder', function() {
     return del("./dist");
 });
 
-gulp.task('copyGeneralFiles', function () {
+gulp.task('copyGeneralFiles', function() {
     var pathsToCopy = [
         './app/**/*',
         '!./app/index.html',
+        '!./app/about.html',
+        '!./app/contact.html',
+        '!./app/stories.html',
+        '!./app/products.html',
         '!./app/assets/images/**/*',
         '!./app/assets/styles/**/*',
         '!./app/assets/scripts/**/*',
@@ -36,26 +40,25 @@ gulp.task('copyGeneralFiles', function () {
         .pipe(gulp.dest("./dist"));
 });
 
-gulp.task('usemin', function () {
-    return gulp.src("./app/index.html")
+gulp.task('usemin', function() {
+    return gulp.src(["./app/index.html", "./app/about.html", "./app/contact.html", "./app/stories.html", "./app/products.html"])
         .pipe(usemin({
             css: [
-                function () {
+                function() {
                     return rev()
-                }, function () {
+                },
+                function() {
                     return cleanCSS()
                 }
             ],
             js: [
-                function () {
+                function() {
                     return rev()
-                }, function () {
+                },
+                function() {
                     return uglify()
                 }
             ]
         }))
         .pipe(gulp.dest("./dist"));
 });
-
-
-
