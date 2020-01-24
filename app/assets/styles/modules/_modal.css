@@ -8,30 +8,36 @@
     width: 0%;
     overflow: hidden;
     z-index: 9;
-    .btn {
+    .link:link,
+    .link:visited {
         display: inline-block;
         margin-bottom: 20px;
     }
     &--open {
         height: 100vh;
+        overflow: auto;
         width: 100%;
     }
     &__body {
         background: #FFFFFF;
-        position: absolute;
-        top: 50%;
-        left: 50%;
         box-shadow: 0px 4px 75px rgba(0, 0, 0, 0.11);
         border-radius: 13px;
-        padding: 30px;
         vertical-align: middle;
-        transform: translate(-50%, -50%) scale(0);
         height: 0;
-        transition: all .3s cubic-bezier(0.42, 0, 0.58, 1.0);
+        transition: transform .3s cubic-bezier(0.42, 0, 0.58, 1.0);
+        margin: 0 auto;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        z-index: -7;
         &.show {
-            transform: translate(-50%, -50%) scale(1);
+            transform: scale(1);
+            position: relative;
+            z-index: 1;
             width: 85%;
+            padding: 30px;
             height: auto;
+            opacity: 1;
         }
     }
     &__head {
@@ -45,12 +51,13 @@
         font-size: 1.2rem;
         text-transform: uppercase;
         font-weight: 400;
+        line-height: 2rem;
     }
     &__close-btn {
         position: relative;
         background: #ED1C25;
-        height: 24px;
-        width: 24px;
+        min-height: 24px;
+        min-width: 24px;
         border-radius: 50%;
         cursor: pointer;
         display: flex;

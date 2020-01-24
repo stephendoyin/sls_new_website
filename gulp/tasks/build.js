@@ -29,7 +29,7 @@ gulp.task('copyGeneralFiles', function() {
         '!./app/contact.html',
         '!./app/stories.html',
         '!./app/products.html',
-        '!./app/assets/images/**/*',
+        // '!./app/assets/images/**/*',
         '!./app/assets/styles/**/*',
         '!./app/assets/scripts/**/*',
         '!./app/temp',

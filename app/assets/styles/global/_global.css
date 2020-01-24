@@ -30,6 +30,7 @@ body.fixed {
     text-decoration: none;
     color: #ED1C25;
     font-size: 1.1rem;
+    white-space: nowrap;
     span {
         margin-left: 22px;
         height: 100%;
