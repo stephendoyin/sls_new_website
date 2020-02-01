@@ -9,13 +9,24 @@
     z-index: 6;
     &--up {
         top: -300px;
+        opacity: 0;
     }
     &--down {
         top: 0px;
         background: #fff;
+        opacity: 1;
         box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
         &--no-shadow {
             box-shadow: none;
+        }
+        .menu-icon__line {
+            background: #000;
+            &::after {
+                background: #000;
+            }
+            &::before {
+                background: #000;
+            }
         }
     }
     &__inner {
@@ -32,7 +43,7 @@
     &__link:link,
     &__link:visited {
         text-decoration: none;
-        color: #FF0000;
+        color: #000;
         margin-left: 60px;
         position: relative;
         display: none;
@@ -45,15 +56,15 @@
         content: "";
         height: 1.5px;
         width: calc(100% + 10px);
-        background: #000;
+        background: #000000;
         vertical-align: middle;
         position: absolute;
         top: 9px;
         left: -5px;
     }
     &-icon {
-        height: 34px;
-        width: 60px;
+        height: 28px;
+        width: 45px;
         position: relative;
         display: flex;
         justify-content: center;
@@ -62,7 +73,7 @@
         &__line {
             width: 100%;
             height: 2.7px;
-            background: #FF0000;
+            background: #fff;
             border-radius: 150px;
             transition: all .5s;
             margin-bottom: 2.5px;
@@ -73,7 +84,7 @@
                 display: block;
                 border-radius: 150px;
                 transform-origin: center;
-                background: #ff0000;
+                background: #fff;
                 position: absolute;
                 top: 0px;
                 transition: all .5s;
@@ -85,7 +96,7 @@
                 height: 2.7px;
                 display: block;
                 border-radius: 150px;
-                background: #ff0000;
+                background: #fff;
                 position: absolute;
                 bottom: 4px;
                 right: 0;
@@ -100,12 +111,14 @@
                     transform: rotate(-45deg);
                     top: 10px;
                     transform-origin: center;
+                    background: #000;
                 }
                 &::before {
                     width: 100%;
                     transform: rotate(45deg);
                     top: 10px;
                     transform-origin: center;
+                    background: #000;
                 }
             }
         }

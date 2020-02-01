@@ -20,7 +20,7 @@
     }
     &__container {
         padding: 60px 0;
-        background: url(../../assets/images/about__bg.png);
+        /* background: url(../../assets/images/about__bg.png); */
     }
     &__txt {
         color: #000000;

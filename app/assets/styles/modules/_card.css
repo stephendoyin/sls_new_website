@@ -48,14 +48,14 @@
         padding-top: 16px;
     }
     &__bg {
-        height: 60vh;
+        height: 477px;
         width: 40%;
-        background: #ED1C25;
+        background: #fcf4a370;
         border-radius: 43px;
         position: relative;
         display: none;
         div {
-            border: 1px solid #ffffff;
+            border: 1px solid #000;
             background: transparent;
             height: 100%;
             width: 100%;
