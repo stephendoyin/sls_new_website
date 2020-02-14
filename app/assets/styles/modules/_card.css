@@ -1,18 +1,86 @@
 .card {
     background-color: #ffffff;
-    box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.12);
-    border-radius: 14px;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
     width: 100%;
-    padding: 30px;
-    padding-bottom: 70px;
+    padding: 60px 50px;
+    padding-bottom: 90px;
+    overflow: hidden;
     margin-right: 0%;
     margin-bottom: 30px;
     position: relative;
+    transition: all .3s linear;
+    .fa {
+        padding-bottom: 22px;
+        font-size: 3.6rem;
+        color: #ffffff;
+        position: relative;
+        z-index: 1;
+        font-weight: 300;
+    }
+    .overlay--first {
+        background-image: linear-gradient(to top, rgba(229, 59, 36, 0.9), rgba(68, 76, 92, 0.5)), url(../../assets/images/onlinee.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .overlay--second {
+        background-image: linear-gradient(to top, rgba(229, 59, 36, 0.9), rgba(68, 76, 92, 0.5)), url(../../assets/images/retail.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .overlay--third {
+        background-image: linear-gradient(to top, rgba(229, 59, 36, 0.9), rgba(68, 76, 92, 0.5)), url(../../assets/images/city.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .overlay {
+        position: absolute;
+        top: 0%;
+        left: 0;
+        height: 100%;
+        z-index: 0;
+        width: 100%;
+        transition: all .3s ease-in-out;
+    }
+    &:hover {
+        .fa {
+            color: #262d36;
+        }
+        .card__link {
+            color: #e53b24;
+        }
+        .card__text {
+            color: #243238;
+        }
+        .card__title {
+            color: #262d36;
+            &::after {
+                background-color: #d7dce1
+            }
+            span {
+                color: #d7dce1;
+            }
+        }
+        .overlay {
+            top: -100%;
+        }
+    }
+    &__link {
+        color: #fff;
+    }
+    span {
+        color: #fff;
+        margin-right: 3px;
+    }
     .link:link,
     .link:visited {
         position: absolute;
-        bottom: 30px;
-        right: 30px;
+        bottom: 50px;
+        left: 50px;
+        font-family: lato, sans-serif;
     }
     &__inner-container {
         position: relative;
@@ -21,7 +89,7 @@
         justify-content: space-between;
         align-items: stretch;
         width: 100%;
-        padding-top: 94px;
+        padding-top: 24px;
         flex-wrap: wrap;
     }
     &__container {
@@ -31,18 +99,35 @@
         width: 100%;
     }
     &__title {
-        font-size: 1.3rem;
-        color: #4d4d4d;
+        font-size: 1.1rem;
+        font-family: Poppins, sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        position: relative;
         padding-bottom: 16px;
+        line-height: 1.4rem;
+        font-weight: 600;
+        &::after {
+            content: "";
+            height: 1px;
+            width: 100px;
+            display: block;
+            background-color: #fff;
+            margin-top: 20px;
+        }
     }
     &__text {
-        font-size: 1.2rem;
-        font-weight: 400;
-        color: rgba(0, 0, 0, 0.5);
-        line-height: normal;
+        font-size: 1rem;
+        font-weight: 300;
+        color: #fff;
+        line-height: 1.7rem;
+        font-family: Lato, sans-serif;
+        position: relative;
+        z-index: 1;
     }
     &__icon {
-        padding-bottom: 16px;
+        padding-bottom: 22px;
+        height: 80px
     }
     &__link {
         padding-top: 16px;
@@ -67,7 +152,7 @@
     }
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 620px) {
     .card {
         width: 48%;
     }
@@ -75,7 +160,6 @@
 
 @media only screen and (min-width: 1200px) {
     .card {
-        margin-right: 3%;
         width: 31.5%;
         margin-bottom: 0;
     }
@@ -83,9 +167,6 @@
         display: block;
     }
     .card__inner-container {
-        position: absolute;
-        padding-top: 30px;
-        bottom: 50px;
         flex-wrap: nowrap;
     }
 }

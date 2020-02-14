@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>
-        Accelerex
+        Contact Us Accelerex
     </title>
 
 
     <!-- build:css assets/styles/styles.css -->
     <link rel="stylesheet" href="temp/styles/styles.css">
     <!-- endbuild -->
-
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/vln1ozk.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900i&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
 
     <!-- build:js assets/scripts/Vendor.js -->
     <script src="temp/scripts/Vendor.js"></script>
@@ -25,9 +25,11 @@
 
 </head>
 
+
+
 <body>
 
-    <header class="header header-contact">
+    <header class="header__about">
 
         <div class="menu">
 
@@ -39,19 +41,25 @@
 
                 <div class="menu__right-item">
                     <a href="index.html" class="menu__link">
-                        HOME
+                        Home
                     </a>
                     <a href="about.html" class="menu__link">
-                        ABOUT US
+                        About Us
                     </a>
                     <a href="products.html" class="menu__link">
-                        PRODUCTS
+                        Products
                     </a>
                     <a href="stories.html" class="menu__link">
-                        STORIES
+                        Stories
                     </a>
                     <a href="contact.html" class="menu__link menu__link--active">
-                        CONTACT US
+                        Contact Us
+                    </a>
+                    <a href="faq.html" class="menu__link">
+                        <span style="text-transform:upper-case;">FAQ</span>
+                    </a>
+                    <a href="contact.html" class="menu__link menu__link-btn">
+                        GET IN TOUCH
                     </a>
                     <div class="menu-icon">
                         <div class="menu-icon__line"></div>
@@ -63,66 +71,81 @@
 
         <div class="mobile-menu">
             <div class="mobile-menu__links">
-                <a href="index.html" class="mobile-menu__link">HOME</a>
+                <a href="index.html" class="mobile-menu__link mobile-menu__link--active">HOME</a>
                 <a href="about.html" class="mobile-menu__link">ABOUT US</a>
                 <a href="products.html" class="mobile-menu__link">PRODUCTS</a>
                 <a href="stories.html" class="mobile-menu__link">STORIES</a>
-                <a href="contact.html" class="mobile-menu__link mobile-menu__link--active">CONTACT US</a>
+                <a href="contact.html" class="mobile-menu__link">CONTACT US</a>
             </div>
         </div>
 
-        <div class="header__slider__container">
 
-            <div class="">
+        <div class="about-hero__container">
+            <div class="row about-hero">
 
-                <div class="header__slider__inner">
 
-                    <img src="assets/images/Ellipse.png" class="header__side-circle">
+                <h2 class="about-hero__title">
 
-                    <div class="header-content row">
-                        <div>
-                            <h2 class="header-content__title">
+                    Contact US
+                </h2>
+
+                <span>
+                            <a class="about-hero__nav" href="index.html">
+                                Home
+                            </a>
+                            <span style="font-weight: Lato;font-size: 1.2rem;color: white;">&RightArrow;</span>
+                <a href="about.html" class="about-hero__nav">
                                 Contact Us
-                            </h2>
-                            <p class="header-content__txt">
-                                Extraordinary Customer Service
-                            </p>
-                            <a href="#" class="btn">
-                                    GET A LOAN NOW 
-                                    <span>
-                                        <img class="btn__arrow" src="assets/images/Arrow.svg" alt="">
-                                    </span>
-                                </a>
-                        </div>
-
-                        <div>
-                            <img class="header-content__img" src="assets/images/contact-us.svg" alt="">
-                        </div>
-                    </div>
-
-                </div>
-
-
+                            </a>
+                </span>
 
             </div>
-
-
         </div>
-
-        <div class="header__side-bg"></div>
-
 
     </header>
 
-    <section>
-        <div class="about__container">
-            <div class="row">
-                <h2 class="about__title">
-                    REACH OUT TO US
-                </h2>
-                <p class="about__text">
-                    We look forward to hearing from you! <br> We guarantee feedback within 24 hours
-                </p>
+
+
+    <section class="contact-info__section">
+        <div class="row">
+            <div class="contact-info">
+
+                <div class="contact-info__item">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <div>
+                        <h6>
+                            CALL TODAY
+                        </h6>
+                        <p>
+                            &plus;234 <strong>90 2115 9180</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-info__item">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <div>
+                        <h6>
+                            CALL TODAY
+                        </h6>
+                        <p>
+                            &plus;800 <strong>123 45 67</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-info__item">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <div>
+                        <h6>
+                            EMAIL US
+                        </h6>
+                        <p>
+                            <strong style="text-transform: lowercase;">contact@slsbank.com</strong>
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -130,169 +153,192 @@
     <section class="contact__section">
 
         <div class="container">
-            <div class="row">
-                <h2 class="title">
-                    reach out
-                </h2>
-                <div class="contact">
-                    <form action="" class="contact-form">
 
-                        <div class="contact-form__inner-container">
-                            <input type="text" id="contact-form__name" required autocomplete="off" class="contact-form__input">
-                            <label for="contact-form__name" class="contact-form__label">
-                                Name
-                            </label>
-                        </div>
-                        <div class="contact-form__inner-container">
-                            <input type="text" id="contact-form__email" required autocomplete="off" class="contact-form__input">
-                            <label for="contact-form__email" class="contact-form__label">
-                                Email
-                            </label>
-                        </div>
-                        <div class="contact-form__inner-container">
-                            <textarea type="text" rows="6" id="contact-form__message" required autocomplete="off" class="contact-form__input"></textarea>
-                            <label for="contact-form__name" class="contact-form__label">
-                                Message
-                            </label>
-                        </div>
+            <div class="contact">
 
-                        <div class="contact-form__inner-container">
-                            <input type="submit" value="Submit" class="contact-form__submit">
-                        </div>
-
-                    </form>
-                    <div class="contact__map">
-                        <div class="contact__inner__map">
-                            <div class="mapouter">
-                                <div class="gmap_canvas">
-                                    <iframe style="width: 100%;height: 500px;" id="gmap_canvas" src="https://maps.google.com/maps?q=8%20Asaba%20Close%2C%20Off%20Emeka%20Anyaoku%20Street%2C%20Area%2011%20Garki%20Abuja&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"
-                                        marginwidth="0"></iframe>
-                                    <a href="https://www.online-timer.net"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contact__items">
-                            <div class="contact__item">
-                                <img src="assets/images/location.svg" class="contact__item__img" alt="">
-                                <p class="contact__item__text">
-                                    Plot 1109, No 167 Ademola Adetokunbo Crescent, Wuse 2 Abuja
+                <div class="contact__item">
+                    <div class="contact__item__inner">
+                        <h2 class="title title--grey title--grey--lighter">
+                            Get in touch
+                        </h2>
+                        <h3 class="title__sub contact__title">
+                            Contact Details
+                        </h3>
+                        <p class="gen__text text">
+                            If you are interested in working with us then please drop us a line, we would love to hear from you.
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <span>
+                                    <i></i>
+                                </span>
+                                <p class="contact-de-p">
+                                    8 Asaba Close, Off Emeka Anyaoku Street, Area 11 Garki Abuja
                                 </p>
                             </div>
-                            <div class="contact__item">
-                                <img src="assets/images/phone.svg" class="contact__item__img" alt="">
-                                <p class="contact__item__text">
-                                    +234 90 2115 9180, <br> +234 81 6710 2409
+                            <div class="contact-detail-item">
+                                <span>
+                                    <i></i>
+                                </span>
+                                <p class="contact-de-p">
+                                    contact@slsbank.com
                                 </p>
                             </div>
-
-                            <div class="contact__item">
-                                <img src="assets/images/mail.svg" class="contact__item__img" alt="">
-                                <p class="contact__item__text">
-                                    contact@Accelerexbank.com
+                            <div class="contact-detail-item">
+                                <span>
+                                    <i></i>
+                                </span>
+                                <p class="contact-de-p contact-de-p--no-b-spacing">
+                                    <a href=" tel:2349021159180 ">+800 1234 56 78</a>
                                 </p>
                             </div>
                         </div>
                     </div>
+
+                </div>
+
+                <div class="contact__item ">
+                    <div class="contact__item__inner contact__item__inner--adjusted">
+                        <form action=" " class="contact-form ">
+                            <h2 class="title title--grey">
+                                Contact us
+                            </h2>
+                            <h3 class=" title__sub contact-form__sub">
+                                Drop us a line
+                            </h3>
+
+                            <div class="contact-form__inner-container ">
+                                <input type="text " id="contact-form__name " required autocomplete="off " class="contact-form__input ">
+                                <label for="contact-form__name " class="contact-form__label ">
+                                    Name
+                                </label>
+                            </div>
+                            <div class="contact-form__inner-container ">
+                                <input type="text " id="contact-form__email " required autocomplete="off " class="contact-form__input ">
+                                <label for="contact-form__email " class="contact-form__label ">
+                                    Email
+                                </label>
+                            </div>
+                            <div class="contact-form__inner-container ">
+                                <textarea type="text " rows="3 " id="contact-form__message " required autocomplete="off " class="contact-form__input "></textarea>
+                                <label for="contact-form__name " class="contact-form__label ">
+                                    Message
+                                </label>
+                            </div>
+
+                            <div class="contact-form__inner-container ">
+                                <input type="submit " value="send message" class="contact-form__submit btn">
+                            </div>
+
+                        </form>
+                    </div>
                 </div>
             </div>
+
+        </div>
+
         </div>
 
     </section>
 
 
-
-
-    <footer>
-
-        <div class="footer">
-            <div class="row">
-                <form class="footer__form">
-                    <div class="footer__label">
-                        SUBSCRIBE TO OUR NEWSLETTER
+    <footer class="footer ">
+        <div class="contact__footer">
+            <div class="footer__container row">
+                <div class="footer__upper-text">
+                    <h2 class="title__sub">
+                        Stay always in touch
+                    </h2>
+                    <p class="footer__text">
+                        Subscribe to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox! </p>
+                </div>
+                <form>
+                    <div class="form__inner">
+                        <input type="text" placeholder="Enter your email">
+                        <button type="submit">
+                            SUSCRIBE
+                        </button>
                     </div>
-                    <div class="footer__input__container">
 
-                        <img src="assets/images/env.png" class="footer__input__icon" alt="">
-                        <input class="footer__input" type="email" required placeholder="Enter your email address">
-                        <input type="submit" href="" value="SUBMIT" class="footer__input__submit">
-                    </div>
                 </form>
 
-                <div class="footer__container">
-                    <div class="footer__container__item">
-                        <h3 class="footer__container__title">
-                            Accelerex MICROFINANCE BANK
-                        </h3>
-                        <p class="footer__container__text">
-                            Accelerex Microfinance Bank is founded with focus on the financially unserved and underserved. We are people oriented, with the aim of providing all with basic financial services in an innovative and easily accessible manner.
-                        </p>
-
-                        <div class="footer__social__icons">
-                            <a href="">
-                                <img src="assets/images/google-plus.png" alt="">
-                            </a>
-                            <a href="">
-                                <img src="assets/images/twitter.png" alt="">
-                            </a>
-                            <a href="">
-                                <img src="assets/images/fb.png" alt="">
-                            </a>
-
-                        </div>
-                    </div>
-
-                    <div class="footer__container__item">
-                        <h3 class="footer__container__title">
-                            RELATED LINKS
-                        </h3>
-                        <a href="index.html" class="footer__container__link">Home</a> <br>
-                        <a href="about.html" class="footer__container__link">About</a> <br>
-                        <a href="products.html" class="footer__container__link">Products</a> <br>
-                        <a href="stories.html" class="footer__container__link">Stories</a> <br>
-                        <a href="contact.html" class="footer__container__link">Contact Us</a>
-                    </div>
-
-                    <div class="footer__container__item">
-                        <h3 class="footer__container__title">
-                            CONTACT
-                        </h3>
-                        <div class="footer__container__flex">
-
-                            <img src="assets/images/phone.svg" alt="">
-
-                            <span>
-                                +234 90 2115 9180,<br>+234 81 6710 2409 
-                            </span>
-                        </div>
-                        <div class="footer__container__flex">
-
-                            <img src="assets/images/location.svg" alt="">
-
-                            <span>
-                                contact@Accelerexbank.com
-                            </span>
-                        </div>
-                        <div class="footer__container__flex">
-
-                            <img src="assets/images/mail.svg" alt="">
-
-                            <span>
-                                8 Asaba Close, Off Emeka Anyaoku Street, Area 11 Garki Abuja
-                            </span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
-        <div class="row footer__bottom">
-            &copy; &nbsp;&nbsp; COPYRIGHTS, CREDIT CLAN 2020
+
+        <div class="footer__lower-container ">
+            <div class="footer__items row ">
+
+                <div class="footer__item ">
+                    <h6 class="footer__title ">
+                        Location
+                    </h6>
+                    <span>
+                        8 Asaba Close,
+                    </span>
+                    <span>
+                        Off Emeka Anyaoku Street,
+                    </span>
+                    <span>
+                        Area 11 Garki Abuja
+                    </span>
+                </div>
+                <div class="footer__item ">
+                    <h6 class="footer__title ">
+                        Contacts
+                    </h6>
+                    <span>
+                        +234 90 2115 9180
+                    </span>
+                    <span>
+                        +234 81 6710 2409
+                       </span>
+                    <span>
+                        contact@slsbank.com  
+                    </span>
+                </div>
+                <div class="footer__item ">
+                    <h6 class="footer__title">
+                        Follow
+                    </h6>
+                    <a href="" class="footer__icon">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="" class="footer__icon">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="" class="footer__icon">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="footer__item ">
+                    <h6 class="footer__title ">
+                        Location
+                    </h6>
+                    <span>
+                        &copy; 2020 Accelerex. All rights reserved.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer__copy ">
+            <div class="row ">
+                &copy; 2020 Accelerex. All rights reserved.
+            </div>
         </div>
 
     </footer>
 
+
+
+
+
     <!-- build:js assets/scripts/App.js -->
-    <script src="temp/scripts/App.js"></script>
+    <script src="temp/scripts/App.js "></script>
     <!-- endbuild -->
 
 

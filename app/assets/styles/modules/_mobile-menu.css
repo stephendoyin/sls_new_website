@@ -23,6 +23,8 @@
         color: #ED1C25;
         font-size: 2.7rem;
         text-align: center;
+        font-family: Lato, sans-serif;
+        font-weight: 600;
         text-decoration: none;
         position: relative;
     }
@@ -30,7 +32,7 @@
     &__link--active:visited {
         color: #000;
     }
-    &__link--active:link:after {
+    /* &__link--active:link:after {
         content: "";
         height: 2px;
         width: calc(100% + 10px);
@@ -39,5 +41,5 @@
         position: absolute;
         top: 50%;
         left: -5px;
-    }
+    } */
 }

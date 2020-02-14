@@ -1,0 +1,12 @@
+.progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    &__section {
+        background: linear-gradient(rgba(50, 58, 66, .9), rgba(50, 58, 66, .9)), url(../../assets/images/boss.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}

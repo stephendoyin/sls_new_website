@@ -1,0 +1,28 @@
+.about-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 0;
+    &__container {
+        background: linear-gradient(rgba(50, 58, 66, .5), rgba(50, 58, 66, .5)), url(../../assets/images/hero__bgd.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    &__title {
+        font-size: 1.3rem;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: Poppins, sans-serif;
+    }
+    &__nav:link,
+    &__nav:visited {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        text-transform: capitalize;
+    }
+    &__nav:link:hover,
+    &__nav:visited:hover {
+        border-bottom: 1px solid #fff;
+    }
+}

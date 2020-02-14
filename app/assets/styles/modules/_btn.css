@@ -1,30 +1,39 @@
 .btn {
-    padding: 15px 30px;
-    border: 1px solid #000000;
+    padding: 15px 35px;
+    border: 1px solid #e53b24;
     position: relative;
-    color: #f00;
-    font-size: 1.1875rem;
-    border-radius: 19px;
+    color: #fff;
+    letter-spacing: .1rem;
+    line-height: 1.5rem;
+    font-size: .7rem;
+    border-radius: 4px;
+    background-color: #e53b24;
+    transition: all .3s linear;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
     &:link,
     &:visited {
         text-decoration: none;
         text-transform: uppercase;
-        color: #ff0000;
+        color: #fff;
         position: relative;
         display: inline-block;
         white-space: nowrap;
     }
-    &:link:hover {
-        span {
-            margin-left: 32px;
-        }
+    &--outlined:link,
+    &--outlined:visited {
+        background-color: transparent;
+        border: 1px solid #444c5c;
+        color: #444c5c;
+        padding: 15px 35px;
+        font-weight: 700;
+        text-transform: uppercase;
     }
-    span {
-        margin-left: 22px;
-        height: 100%;
-        display: inline-flex;
-        align-items: center;
-        vertical-align: middle;
-        transition: margin .2s ease-in-out;
+    &:link:hover,
+    &--outlined:hover {
+        background: #e53b24;
+        color: #ffffff;
+        border-color: #e53b24;
     }
 }

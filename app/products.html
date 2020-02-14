@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>
-        Accelerex
+        Contact Us Accelerex
     </title>
 
 
     <!-- build:css assets/styles/styles.css -->
     <link rel="stylesheet" href="temp/styles/styles.css">
     <!-- endbuild -->
-
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/vln1ozk.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900i&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
 
     <!-- build:js assets/scripts/Vendor.js -->
     <script src="temp/scripts/Vendor.js"></script>
@@ -25,9 +25,11 @@
 
 </head>
 
+
+
 <body>
 
-    <header class="header header-product">
+    <header class="header__about">
 
         <div class="menu">
 
@@ -38,501 +40,336 @@
                 </div>
 
                 <div class="menu__right-item">
-                    <a href="index.html" class="menu__link">
-                        HOME
+                    <a href="index.html" class="menu__link menu__link--active">
+                        Home
                     </a>
                     <a href="about.html" class="menu__link">
-                        ABOUT US
+                        About Us
                     </a>
-                    <a href="products.html" class="menu__link menu__link--active">
-                        PRODUCTS
+                    <a href="products.html" class="menu__link">
+                        Products
                     </a>
                     <a href="stories.html" class="menu__link">
-                        STORIES
+                        Stories
                     </a>
                     <a href="contact.html" class="menu__link">
-                        CONTACT US
+                        Contact Us
+                    </a>
+                    <a href="faq.html" class="menu__link">
+                        <span style="text-transform: uppercase;">FAQ</span>
+                    </a>
+                    <a href="contact.html" class="menu__link menu__link-btn">
+                        GET IN TOUCH
                     </a>
                     <div class="menu-icon">
                         <div class="menu-icon__line"></div>
                     </div>
                 </div>
-
             </div>
 
         </div>
 
         <div class="mobile-menu">
             <div class="mobile-menu__links">
-                <a href="index.html" class="mobile-menu__link">HOME</a>
+                <a href="index.html" class="mobile-menu__link mobile-menu__link--active">HOME</a>
                 <a href="about.html" class="mobile-menu__link">ABOUT US</a>
-                <a href="products.html" class="mobile-menu__link mobile-menu__link--active">PRODUCTS</a>
+                <a href="products.html" class="mobile-menu__link">PRODUCTS</a>
                 <a href="stories.html" class="mobile-menu__link">STORIES</a>
                 <a href="contact.html" class="mobile-menu__link">CONTACT US</a>
             </div>
         </div>
 
-        <div class="header__slider__container">
 
-            <div class="">
-
-                <div class="header__slider__inner">
-
-                    <img src="assets/images/Ellipse.png" class="header__side-circle">
-
-                    <div class="header-content row">
-                        <div>
-                            <h2 class="header-content__title">
-                                Our Products
-                            </h2>
-                            <p class="header-content__txt">
-                                Our product vary to suit your needs
-                            </p>
-                            <a href="#" class="btn">
-                                    GET A LOAN NOW 
-                                    <span>
-                                        <img class="btn__arrow" src="assets/images/Arrow.svg" alt="">
-                                    </span>
-                                </a>
-                        </div>
-
-                        <div>
-                            <img class="header-content__img" src="assets/images/product.svg" alt="">
-                        </div>
-                    </div>
-
-                </div>
+        <div class="about-hero__container">
+            <div class="row about-hero">
 
 
+                <h2 class="about-hero__title">
+
+                    our products
+                </h2>
+
+                <span>
+                            <a class="about-hero__nav" href="index.html">
+                                Home
+                            </a>
+                            <span style="font-weight: Lato;font-size: 1.2rem;color: white;">&RightArrow;</span>
+                <a href="about.html" class="about-hero__nav">
+                                Products
+                            </a>
+                </span>
 
             </div>
-
-
         </div>
-
-        <div class="header__side-bg"></div>
-
 
     </header>
 
 
-    <section>
-        <div class="about__container">
-            <div class="row">
-                <h2 class="about__title">
-                    OUR PRODUCTS
-                </h2>
-                <p class="about__text">
-                    Our products are tailored for both individuals and SME's in need of financing their operations </p>
-            </div>
-        </div>
-    </section>
 
     <section class="product__section">
 
-        <div class="container">
-            <div class="row">
-                <div class="title">
-                    account products
+        <div class="row product__section--inner">
+
+            <div class="title title--grey">
+                account products
+            </div>
+
+            <div class="products">
+
+                <div class="product">
+                    <h2 class="product__title">
+                        SLS Individual Current Account
+                    </h2>
+                    <p class="product__details">
+                        This account comprises of an opening balance of N 5,000 for Individuals, and supports third party withdrawals. It gives access ...
+                        <a href="#" class="modal__link product__link">View more</a>
+                    </p>
+                    <br>
+                    <a href="" class="btn btn--outlined">
+                        open an account
+                    </a>
                 </div>
 
-                <div class="products">
+                <div class="product">
+                    <h2 class="product__title">
+                        SLS Corporate Current Account
+                    </h2>
+                    <p class="product__details">
+                        This account comprises of an opening balance of N 10,000 for Corporate Entities, and supports third party withdrawals ...
 
-                    <div class="product">
-                        <span class="product__circle"></span>
-                        <h3 class="product__title">
-                            Accelerex STRESS FREE LOAN
-                        </h3>
-                        <img src="assets/images/SAVINGS.svg" alt="" class="product__icon">
+                        <a href="#" class="modal__link product__link">View more</a>
+                    </p>
+                    <br>
+                    <a href="" class="btn btn--outlined">
+                        open an account
+                    </a>
+                </div>
 
-                        <a href="#" class="btn">
-                            OPEN AN Account
-                            <span>
-                                <img class="btn__arrow" src="assets/images/arrow-blc.svg" alt="">
-                            </span>
-                        </a>
-                        <ul class="product__list-wrapper">
-                            <li>₦ 5, 000 Opening Balance for Individuals</li>
-                            <li>Third party withdrawals</li>
-                            <li>Access to E Channels</li>
-                            <li>Access to Loan Facilities</li>
-                            <li>No minimum balances</li>
-                        </ul>
-                        <a href="#" class="link modal__link ">
-                            READ MORE
-                            <span>
-                                <img class="btn__arrow" src="assets/images/Arrow.svg" alt="">
-                            </span>
-                        </a>
-                    </div>
+                <div class="product">
+                    <h2 class="product__title">
+                        SLS Gold
+                    </h2>
+                    <p class="product__details">
+                        This account requires a minimum opening balance of N20,000 and a minimum sitting balance of N10,000. Users can clear cheque ...
+                        <a href="#" class="modal__link product__link">View more</a>
+                    </p>
+                    <br>
+                    <a href="" class="btn btn--outlined">
+                        open an account
+                    </a>
+                </div>
 
-                    <div class="product">
-                        <span class="product__circle"></span>
-                        <h3 class="product__title">
-                            Accelerex CORPORATE CURRENT ACCOUNT
-                        </h3>
-                        <img src="assets/images/SAVINGS.svg" alt="" class="product__icon">
+                <div class="product">
+                    <h2 class="product__title">
+                        SLS Fixed Account
+                    </h2>
+                    <p class="product__details">
+                        This account provides a 1.5 to 4% above normal interest rate on Fixed Deposits. Additionally, it is restricted for amounts above N1M ...
+                        <a href="#" class="modal__link product__link">View more</a>
+                    </p>
+                    <br>
+                    <a href="" class="btn btn--outlined">
+                        open an account
+                    </a>
+                </div>
 
-                        <a href="#" class="btn">
-                            OPEN AN Account
-                            <span>
-                                <img class="btn__arrow" src="assets/images/arrow-blc.svg" alt="">
-                            </span>
-                        </a>
-                        <ul class="product__list-wrapper">
-                            <li>₦ 10, 000 Opening Balance for Corporate Entities</li>
-                            <li>Third party withdrawals</li>
-                            <li>Access to E Channels</li>
-                            <li>Access to Loan Facilities</li>
-                            <li>No minimum balances</li>
-                        </ul>
-                        <a href="#" class="link modal__link">
-                            READ MORE
-                            <span>
-                                <img class="btn__arrow" src="assets/images/Arrow.svg" alt="">
-                            </span>
-                        </a>
-                    </div>
+                <div class="product">
+                    <h2 class="product__title">
+                        SLS Save
+                    </h2>
+                    <p class="product__details">
+                        This is the product specially is targeted towards achieving financial goals. Withdrawal is once, and it has a minimum Opening balance of N5,000 ...
+                        <a href="#" class="modal__link product__link">View more</a>
+                    </p>
+                    <br>
+                    <a href="" class="btn btn--outlined">
+                        open an account
+                    </a>
+                </div>
 
-                    <div class="product">
-                        <span class="product__circle"></span>
-                        <h3 class="product__title">
-                            Accelerex GOLD
-                        </h3>
-                        <img src="assets/images/SAVINGS.svg" alt="" class="product__icon">
+                <div class="product">
+                    <h2 class="product__title">
+                        SLS Kiddies
+                    </h2>
+                    <p class="product__details">
+                        This product has a minimum account opening requirement of N5,000 and a minimum balance of N2,000. The minimum participation period
+                        <a href="#" class="modal__link product__link">View more</a>
+                    </p>
+                    <br>
 
-                        <a href="#" class="btn">
-                            OPEN AN Account
-                            <span>
-                                <img class="btn__arrow" src="assets/images/arrow-blc.svg" alt="">
-                            </span>
-                        </a>
-                        <ul class="product__list-wrapper">
-                            <li>₦ 20, 000 Opening Balance for Individuals</li>
-                            <li>₦ 10, 000 Minimum Sitting Balance</li>
-                            <li>Users can clear cheque in but cannot go for clearing.</li>
-                            <li>Third party withdrawer</li>
-                            <li>Free AMC</li>
-                        </ul>
-                        <a href="#" class="link modal__link">
-                            READ MORE
-                            <span>
-                                <img class="btn__arrow" src="assets/images/Arrow.svg" alt="">
-                            </span>
-                        </a>
-                    </div>
+                    <a href="" class="btn btn--outlined">
+                        open an account
+                    </a>
+                </div>
 
-                    <div class="product">
-                        <span class="product__circle"></span>
-                        <h3 class="product__title">
-                            Accelerex FIXED ACCOUNT
-                        </h3>
-                        <img src="assets/images/SAVINGS.svg" alt="" class="product__icon">
+                <div class="product">
+                    <h2 class="product__title">
+                        SLS SAVINGS
+                    </h2>
+                    <p class="product__details">
+                        SLS Microfinance Bank’s regular savings account tailored to serve micro, small, and medium sized businesses and Individuals ...
+                        <a href="#" class="modal__link product__link">View more</a>
+                    </p>
+                    <br>
 
-                        <a href="#" class="btn">
-                            OPEN AN Account
-                            <span>
-                                <img class="btn__arrow" src="assets/images/arrow-blc.svg" alt="">
-                            </span>
-                        </a>
-                        <ul class="product__list-wrapper">
-                            <li>1.5 to 4% above normal interest rate on fixed deposits</li>
-                            <li>Restricted for amounts above ₦ 1, 000, 000 </li>
-                        </ul>
-                        <a href="#" class="link modal__link">
-                            READ MORE
-                            <span>
-                                <img class="btn__arrow" src="assets/images/Arrow.svg" alt="">
-                            </span>
-                        </a>
-                    </div>
-
-                    <div class="product">
-                        <span class="product__circle"></span>
-                        <h3 class="product__title">
-                            Accelerex SAVE
-                        </h3>
-                        <img src="assets/images/SAVINGS.svg" alt="" class="product__icon">
-
-                        <a href="#" class="btn">
-                            OPEN AN Account
-                            <span>
-                                <img class="btn__arrow" src="assets/images/arrow-blc.svg" alt="">
-                            </span>
-                        </a>
-                        <ul class="product__list-wrapper">
-                            <li>₦ 5, 000 Opening Balance for Individuals</li>
-                            <li>Withdrawal is once</li>
-                            <li>Interest rate is 2% above regular saving account</li>
-                            <li>Access to Loan Facilities</li>
-                            <li>No minimum balances</li>
-                        </ul>
-                        <a href="#" class="link modal__link">
-                            READ MORE
-                            <span>
-                                <img class="btn__arrow" src="assets/images/Arrow.svg" alt="">
-                            </span>
-                        </a>
-                    </div>
-
-                    <div class="product">
-                        <span class="product__circle"></span>
-                        <h3 class="product__title">
-                            Accelerex KIDDIES
-                        </h3>
-                        <img src="assets/images/SAVINGS.svg" alt="" class="product__icon">
-
-                        <a href="#" class="btn">
-                            OPEN AN Account
-                            <span>
-                                <img class="btn__arrow" src="assets/images/arrow-blc.svg" alt="">
-                            </span>
-                        </a>
-                        <ul class="product__list-wrapper">
-                            <li>₦ 5, 000 Opening Balance for Individuals</li>
-                            <li>₦ 2, 000 Minimum Sitting Balance</li>
-                            <li>Minimum participation period is 1 year.</li>
-                            <li>Minimum monthly contribution of ₦ 5, 000 (₦ 60, 000 p.a.) </li>
-                            <li>2% higher than the savings account interest rate (4.2% PA)</li>
-                        </ul>
-                        <a href="#" class="link modal__link">
-                            READ MORE
-                            <span>
-                                <img class="btn__arrow" src="assets/images/Arrow.svg" alt="">
-                            </span>
-                        </a>
-                    </div>
-
-                    <div class="product">
-                        <span class="product__circle"></span>
-                        <h3 class="product__title">
-                            Accelerex SAVINGS
-                        </h3>
-                        <img src="assets/images/SAVINGS.svg" alt="" class="product__icon">
-
-                        <a href="#" class="btn">
-                            OPEN AN Account
-                            <span>
-                                <img class="btn__arrow" src="assets/images/arrow-blc.svg" alt="">
-                            </span>
-                        </a>
-                        <ul class="product__list-wrapper">
-                            <li>₦ 5, 000 Opening Balance for Individuals</li>
-                            <li>₦ 1, 000 Minimum Sitting Balance</li>
-                            <li>Interest rate is 4.2% per annum</li>
-                            <li>Cash pick up services at customer’s location</li>
-                            <li>Free monthly statements</li>
-                        </ul>
-                        <a href="#" class="link modal__link">
-                            READ MORE
-                            <span>
-                                <img class="btn__arrow" src="assets/images/Arrow.svg" alt="">
-                            </span>
-                        </a>
-                    </div>
-
+                    <a href="" class="btn btn--outlined">
+                        open an account
+                    </a>
                 </div>
 
 
             </div>
         </div>
 
-    </section>
+        <div class="row product__section--inner">
+            <div class="title title--grey">
+                Loan products
+            </div>
 
-    <section class="product__section product__section--white">
+            <div class="products">
 
-        <div class="container">
-            <div class="row">
-                <div class="title">
-                    account products
+                <div class="product">
+                    <h2 class="product__title">
+                        SLS STRESS FREE LOAN
+                    </h2>
+                    <p class="product__details">
+                        This product offers credit facility to government employees enrolled on IPPIS and GIFMIS. It requires the provision of Valid regulatory means of
+                        <a href="#" class="modal__link product__link">View more</a>
+                    </p>
+                    <br>
+
+                    <a href="" class="btn btn--outlined">
+                        open an account
+                    </a>
                 </div>
 
-                <div class="products">
+                <div class="product">
+                    <h2 class="product__title">
+                        SLS SALARY ADVANCE LOAN
+                    </h2>
+                    <p class="product__details">
+                        This product offers credit facility to public and private sector employees, who are not on IPPIS. It requires the provision of one guarantor with post
+                        <a href="#" class="modal__link product__link">View more</a>
+                    </p>
+                    <br>
 
-                    <div class="product product--wide">
-                        <span class="product__circle"></span>
-                        <h3 class="product__title">
-                            Accelerex STRESS FREE LOAN
-                        </h3>
-                        <img src="assets/images/wallet_sav.svg" alt="" class="product__icon">
-
-                        <a href="#" class="btn">
-                            OPEN AN Account
-                            <span>
-                                <img class="btn__arrow" src="assets/images/arrow-blc.svg" alt="">
-                            </span>
-                        </a>
-                        <ul class="product__list-wrapper">
-                            <li>Credit facility to government employees enrolled on IPPIS and GIFMIS</li>
-                        </ul>
-                        <a href="#" class="link modal__link">
-                            READ MORE
-                            <span>
-                                <img class="btn__arrow" src="assets/images/Arrow.svg" alt="">
-                            </span>
-                        </a>
-                    </div>
-
-                    <div class="product product--wide">
-                        <span class="product__circle"></span>
-                        <h3 class="product__title">
-                            Accelerex SALARY ADVANCE LOAN
-                        </h3>
-                        <img src="assets/images/wallet_sav.svg" alt="" class="product__icon">
-
-                        <a href="#" class="btn">
-                            OPEN AN Account
-                            <span>
-                                <img class="btn__arrow" src="assets/images/arrow-blc.svg" alt="">
-                            </span>
-                        </a>
-                        <ul class="product__list-wrapper">
-                            <li>This product offers credit facility to public and private sector employees, who are not on IPPIS</li>
-                        </ul>
-                        <a href="#" class="link modal__link">
-                            READ MORE
-                            <span>
-                                <img class="btn__arrow" src="assets/images/Arrow.svg" alt="">
-                            </span>
-                        </a>
-                    </div>
-
+                    <a href="" class="btn btn--outlined">
+                        open an account
+                    </a>
                 </div>
-
 
             </div>
+
+
         </div>
+
+
     </section>
 
-    <section class="product-call__section">
-        <div class="container">
-            <div class="row">
-                <div class="product-call">
-                    <div class="product-call__text">
-                        <h2 class="product-call__title">
-                            WE SAVED THE BEST FOR LAST
-                        </h2>
-                        <p class="product-call__para">
-                            Accessing our products only requires you have a duly filled account opening form, 2 passport photographs, a recent utility bill and a valid means of identification
-                        </p>
-                        <a href="#" class="btn">
-                            GET A LOAN NOW 
-                            <span>
-                                <img class="btn__arrow" src="assets/images/Arrow.svg" alt="">
-                            </span>
-                        </a>
-                    </div>
-                    <div class="product-call__img-container">
-                        <img src="assets/images/finance-call.svg" alt="">
-                    </div>
+    <footer class="footer">
+        <div class="contact__footer">
+            <div class="footer__container row">
+                <div class="footer__upper-text">
+                    <h2 class="title__sub">
+                        Stay always in touch
+                    </h2>
+                    <p class="footer__text">
+                        Subscribe to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox! </p>
                 </div>
-            </div>
-        </div>
-        <img src="assets/images/Ellipse.png" class="product-call__bg">
-    </section>
-
-
-    <footer>
-
-        <div class="footer">
-            <div class="row">
-                <form class="footer__form">
-                    <div class="footer__label">
-                        SUBSCRIBE TO OUR NEWSLETTER
+                <form>
+                    <div class="form__inner">
+                        <input type="text" placeholder="Enter your email">
+                        <button type="submit">
+                            SUSCRIBE
+                        </button>
                     </div>
-                    <div class="footer__input__container">
-                        <img src="assets/images/env.png" class="footer__input__icon" alt="">
-                        <input class="footer__input" type="email" required placeholder="Enter your email address">
-                        <input type="submit" href="" value="SUBMIT" class="footer__input__submit">
-                    </div>
+
                 </form>
 
-                <div class="footer__container">
-                    <div class="footer__container__item">
-                        <h3 class="footer__container__title">
-                            Accelerex MICROFINANCE BANK
-                        </h3>
-                        <p class="footer__container__text">
-                            Accelerex Microfinance Bank is founded with focus on the financially unserved and underserved. We are people oriented, with the aim of providing all with basic financial services in an innovative and easily accessible manner.
-                        </p>
-
-                        <div class="footer__social__icons">
-                            <a href="">
-                                <img src="assets/images/google-plus.png" alt="">
-                            </a>
-                            <a href="">
-                                <img src="assets/images/twitter.png" alt="">
-                            </a>
-                            <a href="">
-                                <img src="assets/images/fb.png" alt="">
-                            </a>
-
-                        </div>
-                    </div>
-
-                    <div class="footer__container__item">
-                        <h3 class="footer__container__title">
-                            RELATED LINKS
-                        </h3>
-                        <a href="index.html" class="footer__container__link">Home</a> <br>
-                        <a href="about.html" class="footer__container__link">About</a> <br>
-                        <a href="products.html" class="footer__container__link">Products</a> <br>
-                        <a href="stories.html" class="footer__container__link">Stories</a> <br>
-                        <a href="contact.html" class="footer__container__link">Contact Us</a>
-                    </div>
-
-                    <div class="footer__container__item">
-                        <h3 class="footer__container__title">
-                            CONTACT
-                        </h3>
-                        <div class="footer__container__flex">
-
-                            <img src="assets/images/phone.svg" alt="">
-
-                            <span>
-                                +234 90 2115 9180,<br>+234 81 6710 2409 
-                            </span>
-                        </div>
-                        <div class="footer__container__flex">
-
-                            <img src="assets/images/location.svg" alt="">
-
-                            <span>
-                                contact@Accelerexbank.com
-                            </span>
-                        </div>
-                        <div class="footer__container__flex">
-
-                            <img src="assets/images/mail.svg" alt="">
-
-                            <span>
-                                8 Asaba Close, Off Emeka Anyaoku Street, Area 11 Garki Abuja
-                            </span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
-        <div class="row footer__bottom">
-            &copy; &nbsp;&nbsp; COPYRIGHTS, CREDIT CLAN 2020
+
+        <div class="footer__lower-container ">
+            <div class="footer__items row ">
+
+                <div class="footer__item ">
+                    <h6 class="footer__title ">
+                        Location
+                    </h6>
+                    <span>
+                        8 Asaba Close,
+                    </span>
+                    <span>
+                        Off Emeka Anyaoku Street,
+                    </span>
+                    <span>
+                        Area 11 Garki Abuja
+                    </span>
+                </div>
+                <div class="footer__item ">
+                    <h6 class="footer__title ">
+                        Contacts
+                    </h6>
+                    <span>
+                        +234 90 2115 9180
+                    </span>
+                    <span>
+                        +234 81 6710 2409
+                       </span>
+                    <span>
+                        contact@slsbank.com  
+                    </span>
+                </div>
+                <div class="footer__item ">
+                    <h6 class="footer__title">
+                        Follow
+                    </h6>
+                    <a href="" class="footer__icon">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="" class="footer__icon">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="" class="footer__icon">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="footer__item ">
+                    <h6 class="footer__title ">
+                        Location
+                    </h6>
+                    <span>
+                        &copy; 2020 Accelerex. All rights reserved.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer__copy ">
+            <div class="row ">
+                &copy; 2020 Accelerex. All rights reserved.
+            </div>
         </div>
 
     </footer>
+
     <div class="modal">
 
         <div class="modal__body">
             <div class="modal__head">
                 <h2 class="modal__title">
-                    <h3 class="product__title">
-                        Accelerex STRESS FREE LOAN
-                    </h3>
-                    </h3>
+                    SLS INDIVIDUAL CURRENT ACCOUNT
                 </h2>
                 <div class="modal__close-btn">
                     <img src="assets/images/ex.png" alt="">
                 </div>
             </div>
+
+
             <div class="modal__content__container">
 
                 <div class="modal__content">
@@ -545,6 +382,7 @@
 
 
             </div>
+
 
         </div>
 
@@ -766,9 +604,11 @@
 
         </div>
 
-        <!-- build:js assets/scripts/App.js -->
-        <script src="temp/scripts/App.js"></script>
-        <!-- endbuild -->
+    </div>
+
+    <!-- build:js assets/scripts/App.js -->
+    <script src="temp/scripts/App.js"></script>
+    <!-- endbuild -->
 
 
 

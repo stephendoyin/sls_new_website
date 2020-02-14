@@ -29,6 +29,7 @@ gulp.task('copyGeneralFiles', function() {
         '!./app/contact.html',
         '!./app/stories.html',
         '!./app/products.html',
+        '!./app/faq.html',
         // '!./app/assets/images/**/*',
         '!./app/assets/styles/**/*',
         '!./app/assets/scripts/**/*',
@@ -41,7 +42,7 @@ gulp.task('copyGeneralFiles', function() {
 });
 
 gulp.task('usemin', function() {
-    return gulp.src(["./app/index.html", "./app/about.html", "./app/contact.html", "./app/stories.html", "./app/products.html"])
+    return gulp.src(["./app/index.html", "./app/about.html", "./app/contact.html", "./app/stories.html", "./app/products.html", "./app/contact.html", "./app/stories.html", "./app/faq.html"])
         .pipe(usemin({
             css: [
                 function() {

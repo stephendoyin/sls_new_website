@@ -6,22 +6,24 @@
 }
 
 html {
-    font-size: 10px;
+    font-size: 12px;
     margin: 0;
     padding: 0;
     color: black;
-    font-family: 'Poppins', sans-serif;
-    background-color: #F7F8FA;
+    font-family: 'Rubik', sans-serif;
+    background-color: #f5f7f8;
 }
 
 body.fixed {
     height: 100vh;
     overflow: hidden;
+    counter-set: my-sec-counter;
 }
 
 .row {
     width: 85%;
     margin: 0 auto;
+    position: relative;
 }
 
 .link:link,
@@ -29,72 +31,80 @@ body.fixed {
     display: block;
     text-decoration: none;
     color: #ED1C25;
-    font-size: 1.1rem;
+    font-size: .75rem;
     white-space: nowrap;
-    span {
-        margin-left: 22px;
-        height: 100%;
-        display: inline-flex;
-        align-items: center;
-        vertical-align: middle;
-        margin-bottom: 2px;
-        transition: margin .2s ease-in-out;
-        img {
-            width: 24px;
-        }
-    }
+    text-align: left;
 }
 
-.link:link:hover {
-    span {
-        margin-left: 20px;
-    }
+.gen__text {
+    font-size: 1rem;
+    font-family: Lato, sans-serif;
+    line-height: 1.7rem;
+    color: #42474c;
+    font-weight: 300;
+    padding-bottom: 32px;
 }
 
 .title {
-    font-weight: 300;
-    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: .875rem;
+    line-height: 1.2;
+    font-family: Poppins, sans-serif;
+    letter-spacing: 0.23em;
+    text-align: inherit;
     text-transform: uppercase;
-    padding-bottom: 22px;
-    color: #ED1C25;
+    color: #42474c;
+    margin-bottom: 16px;
     position: relative;
-    white-space: nowrap;
-    &__sub {
-        font-weight: 600;
-        font-size: 1.2rem;
-        line-height: 2rem;
-        padding-bottom: 26px;
-        color: #333;
-        &__smaller {
-            font-family: Roboto, Arial, Helvetica, sans-serif;
-            font-weight: 700;
-            padding: 0;
-            margin: 0;
-        }
+    display: inline-block;
+    padding: 4px 15px 4px 8px;
+    overflow-x: hidden;
+    z-index: 2;
+    &--grey {
+        color: #fff;
     }
     &::before {
-        display: inline-block;
         content: "";
-        height: 1px;
-        width: 50px;
-        background-color: #ED1C25;
-        vertical-align: middle;
-        margin-right: 16px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transform: skewX(18deg);
+        transform-origin: 0px 100% 0px;
+        background-color: #f5f7f8;
+    }
+    &--white::before {
+        background-color: #ffffff;
+    }
+    &--grey::before {
+        background-color: #42474c;
+    }
+    &__sub {
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        padding: 43px 0 30px 0;
+        color: #262d36;
+        font-family: poppins, sans-serif;
+        &--smaller {
+            font-weight: 600;
+            color: #262d36;
+            font-size: 1.6rem;
+            line-height: normal;
+            font-family: poppins, sans-serif;
+        }
+    }
+    &--grey--lighter::before {
+        background-color: rgba(245, 247, 248, 0.2);
     }
 }
 
 @media only screen and (min-width: 600px) {
     html {
         font-size: 14px;
-    }
-    .title::before {
-        width: 90px;
-        display: inline-block;
-        content: "";
-        height: 1px;
-        background-color: #ED1C25;
-        vertical-align: middle;
-        margin-right: 16px;
     }
     .link:link span img,
     .link:visited span img {
@@ -106,23 +116,17 @@ body.fixed {
     html {
         font-size: 16px;
     }
-    .title::before {
-        width: 110px;
-        display: inline-block;
-        content: "";
-        height: 1px;
-        background-color: #ED1C25;
-        vertical-align: middle;
-        margin-right: 16px;
-    }
     .link:link span img,
     .link:visited span img {
         width: 35px;
     }
 }
 
-@media only screen and (min-width: 1680px) {
+@media only screen and (min-width: 1440px) {
     .row {
+        width: 1170px;
+    }
+    .row--added {
         width: 1440px;
     }
 }

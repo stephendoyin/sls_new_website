@@ -1,0 +1,50 @@
+.brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 0;
+    flex-wrap: wrap;
+    &__section {
+        background: #ffffff;
+        img {
+            height: 70px;
+            filter: grayscale(1);
+            opacity: .3;
+            transform: scale(1);
+            transition: transform .3s linear;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        img:nth-child(1) {
+            margin-right: 30px;
+        }
+    }
+    &__item {
+        width: 100%;
+        text-align: center;
+        padding: 30px;
+    }
+}
+
+@media only screen and (min-width: 770px) {
+    .brand__item {
+        width: 50%;
+    }
+    .brand img {
+        height: 70px;
+    }
+    img:nth-child(1) {
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .brand img {
+        height: 80px;
+    }
+    .brand__item {
+        text-align: unset;
+        width: auto;
+    }
+}

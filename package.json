@@ -27,6 +27,7 @@
     "webpack-cli": "^3.3.6"
   },
   "dependencies": {
+    "jquery": "^3.4.1",
     "normalize.css": "^8.0.1",
     "siema": "^1.5.1",
     "swiper": "^5.2.0",

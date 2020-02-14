@@ -6,28 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>
-        Accelerex
+        About Us Accelerex
     </title>
 
+    <style>
 
+    </style>
     <!-- build:css assets/styles/styles.css -->
     <link rel="stylesheet" href="temp/styles/styles.css">
     <!-- endbuild -->
-
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/vln1ozk.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900i&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
 
     <!-- build:js assets/scripts/Vendor.js -->
     <script src="temp/scripts/Vendor.js"></script>
     <!-- endbuild -->
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
+
 
 <body>
 
-    <header class="header header-about">
+    <header class="header__about">
 
         <div class="menu">
 
@@ -39,143 +44,292 @@
 
                 <div class="menu__right-item">
                     <a href="index.html" class="menu__link">
-                        HOME
+                        Home
                     </a>
-                    <a href="about.html" class="menu__link menu__link--active">
-                        ABOUT US
+                    <a href="about.html" class="menu__link  menu__link--active">
+                        About Us
                     </a>
                     <a href="products.html" class="menu__link">
-                        PRODUCTS
+                        Products
                     </a>
                     <a href="stories.html" class="menu__link">
-                        STORIES
+                        Stories
                     </a>
                     <a href="contact.html" class="menu__link">
-                        CONTACT US
+                        Contact Us
+                    </a>
+                    <a href="faq.html" class="menu__link">
+                        <span style="text-transform: uppercase;">FAQ</span>
+                    </a>
+                    <a href="contact.html" class="menu__link menu__link-btn">
+                        GET IN TOUCH
                     </a>
                     <div class="menu-icon">
                         <div class="menu-icon__line"></div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
 
         <div class="mobile-menu">
             <div class="mobile-menu__links">
-                <a href="index.html" class="mobile-menu__link">HOME</a>
-                <a href="about.html" class="mobile-menu__link  mobile-menu__link--active">ABOUT US</a>
+                <a href="index.html" class="mobile-menu__link mobile-menu__link--active">HOME</a>
+                <a href="about.html" class="mobile-menu__link">ABOUT US</a>
                 <a href="products.html" class="mobile-menu__link">PRODUCTS</a>
                 <a href="stories.html" class="mobile-menu__link">STORIES</a>
                 <a href="contact.html" class="mobile-menu__link">CONTACT US</a>
             </div>
         </div>
 
-        <div class="header__slider__container">
 
-            <div class="">
-
-                <div class="header__slider__inner">
-
-                    <img src="assets/images/Ellipse.png" class="header__side-circle">
-
-                    <div class="header-content row">
-                        <div>
-                            <h2 class="header-content__title">
-                                About Us
-                            </h2>
-                            <p class="header-content__txt">
-                                We are a microfinance bank that puts our customers first
-                            </p>
-                            <a href="#" class="btn">
-                                    GET A LOAN NOW 
-                                    <span>
-                                        <img class="btn__arrow" src="assets/images/Arrow.svg" alt="">
-                                    </span>
-                                </a>
-                        </div>
-
-                        <div>
-                            <img class="header-content__img" src="assets/images/about.svg" alt="">
-                        </div>
-                    </div>
-
-                </div>
+        <div class="about-hero__container">
+            <div class="row about-hero">
 
 
+                <h2 class="about-hero__title">
+                    ABOUT US
+                </h2>
+
+                <span>
+                    <a class="about-hero__nav" href="index.html">
+                        Home
+                    </a>
+                    <span style="font-weight: Lato;font-size: 1.2rem;color: white;">&RightArrow;</span>
+                <a href="about.html" class="about-hero__nav">
+                        About Us
+                    </a>
+                </span>
 
             </div>
-
-
         </div>
-
-        <div class="header__side-bg"></div>
-
 
     </header>
 
-    <section>
-        <div class="about__container">
-            <div class="row">
-                <h2 class="about__title">
-                    ABOUT US
-                </h2>
-                <p class="about__text">
-                    We strive to positively impact our clients by ensuring access to financial services through technological friendly and innovative ways.
-                </p>
+
+    <section class="about-detail__section">
+        <div class="row">
+            <h2 class="title">
+                Welcome Message
+            </h2>
+            <h3 class="title__sub about-detail__title">
+                Who We Are
+            </h3>
+            <div class="about-detail">
+
+
+                <div class="about-detail__text">
+                    <p>
+                        SLS Microfinance Bank is founded with focus on the financially unserved and underserved. We are people oriented, with the aim of providing all with basic financial services in an innovative and easily accessible manner.
+                    </p>
+                    <p>
+                        We are people oriented, with the aim of providing all with basic financial services in an innovative and easily accessible manner. We strive to be the leading and most innovative financial services provider to all, at world class standard.
+
+                    </p>
+                    </p>
+                    <p>
+                        Need a loan? Have no worries. At SLS microfinance Bank we provide instant loan services. Our loans are available for your personal, business use. Are you a public servant our SLS Stress free loan and SLS Salary Advance loan will meet your needs and obligations.
+                        Likewise for those working in private establishments our SLS Salary Advance loan will also meet your needs. Are you a business owner our SLS SME loan products will help you finance your business.
+                    </p>
+                    <p>
+                        Our accounts are tailored to cover a wide range of customer’s financial needs from savings to current, corporate and hybrid accounts. This helps us to ensure no one is left out in financial inclusion.
+                    </p>
+                </div>
             </div>
         </div>
+
+
     </section>
 
-    <section class="about__section">
-        <div class="container">
-            <div class="row">
+    <section class="about-section">
 
-                <div class="about__item-container">
-                    <div class="about__item">
-                        <h2 class="title">
+        <div class="row">
+            <div class="about-section__container">
+                <div class="about-section__item">
+                    <h2 class="title title--grey">
+                        recent case studies
+                    </h2>
+                    <h3 class="title__sub about-section__title">
+                        Corporate Video Showcase
+                    </h3>
+                    <p class="gen__text">
+                        With a community of over 400 million users (and a majority age group being 18 to 29), wouldn’t you want to make sure you’re monitoring what people are posting on social networks? Especially if the demographic of your audience falls in that age range.
+                    </p>
+                    <a href="" class="btn">
+                        learn more
+                    </a>
+                </div>
+                <div class="about-section__item">
+                    <img src="assets/images/here.jpg" class="about-section__img" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="about-content">
+        <div class="row">
+            <div class="about-content__container">
+                <div class="about-content__item">
+                    <h2 class="title">
+                        who we are
+                    </h2>
+                    <h3 class="title__sub about-content__title">
+                        Company Profile
+                    </h3>
+                    <p class="about-content__text">
+                        For more than 40 years, we’ve been passionate about achieving better results for our clients.
+                    </p>
+                    <ul class="home-about__menu">
+                        <li class="home-about__menu-tab active">
                             OUR VISION
-                        </h2>
-                        <p class="txt">
+                        </li>
+                        <li class="home-about__menu-tab">
+                            OUR MISSION
+                        </li>
+                        <li class="home-about__menu-tab">
+                            OUR VALUES
+                        </li>
+                    </ul>
+
+                    <div class="home-about-wrapper active">
+                        <p class="home-about__paragraph">
                             To be the leading and most innovative financial services provider to all at world class standard.
                         </p>
+
                     </div>
-                    <div class="about__item__pic">
-                        <img src="assets/images/baller.jpg" class="about__item__img" alt="">
-                    </div>
-                </div>
-                <div class="about__item-container">
-                    <div class="about__item">
-                        <h2 class="title">
-                            OUR MISSION
-                        </h2>
-                        <p class="txt">
-                            To leverage on technology in impacting the lives and businesses of our clients by ensuring access to financial services in a most innovative way.
-                    </div>
-                    <div class="about__item__pic">
-                        <img src="assets/images/INN.png" class="about__item__img" alt="">
-                    </div>
-                </div>
-                <div class="about__item-container">
-                    <div class="about__item">
-                        <h2 class="title">
-                            OUR VISION
-                        </h2>
-                        <p class="txt">
-                            Integrity | Innovation | Accessibility | Friendliness | Professionalism | Excellence | Speed and Accuracy
+
+                    <div class="home-about-wrapper">
+                        <p class="home-about__paragraph">
+                            To leverage on technology in impacting the lives and businesses of our clients by ensuring access to financial services in a most innovative way
                         </p>
+
                     </div>
-                    <div class="about__item__pic">
-                        <img src="assets/images/LEG.png" class="about__item__img" alt="">
+                    <div class="home-about-wrapper">
+
+                        <ul>
+                            <li class="about-content__list gen__text">Integrity</li>
+                            <li class="about-content__list gen__text">Accessibility</li class="about-content__list">
+                            <li class="about-content__list gen__text">Friendliness</li class="about-content__list">
+                            <li class="about-content__list gen__text">Professionalism</li class="about-content__list">
+                            <li class="about-content__list gen__text">Excellence</li class="about-content__list">
+                            <li class="about-content__list gen__text">Speed</li class="about-content__list">
+                            <li class="about-content__list gen__text">Accuracy</li class="about-content__list">
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class="about-content__item">
+                    <h2 class="title">
+                        frequently asked questions
+                    </h2>
+                    <h3 class="title__sub about-content__title">
+                        FAQ
+                    </h3>
+                    <p class="about-content__text">
+                        For more than 40 years, we’ve been passionate about achieving better results for our clients.
+                    </p>
+
+                    <div class="faq">
+                        <div class="faq__item">
+                            <div class="faq__header">
+                                <span>
+                                    1. What does we do?      
+                                </span>
+                                <span class="minus">
+                                    &minus;
+                                </span>
+                                <span class="plus">
+                                    &plus;
+                                </span>
+                            </div>
+                            <div class="faq__content gen__text">
+                                We take pride in our ability to learn the fundamentals of virtually any industry or technology quickly. Some of the markets we have served include green technologies, medical devices, biotechnology, Internet/e-commerce, telecommunications, distance education/e-learning,
+                                real estate… <a href="">view all</a>
+                            </div>
+                        </div>
+
+                        <div class="faq__item">
+                            <div class="faq__header">
+                                <span>
+                                    2. What industries do you specialize in?      
+                                </span>
+                                <span class="minus">
+                                    &minus;
+                                </span>
+                                <span class="plus">
+                                    &plus;
+                                </span>
+                            </div>
+                            <div class="faq__content gen__text">
+                                We take pride in our ability to learn the fundamentals of virtually any industry or technology quickly. Some of the markets we have served include green technologies, medical devices, biotechnology, Internet/e-commerce, telecommunications, distance education/e-learning,
+                                real estate… <a href="">view all</a>
+                            </div>
+                        </div>
+
+                        <div class="faq__item">
+                            <div class="faq__header">
+                                <span>
+                                    3. Can you guarantee that our plan will work?      
+                                </span>
+                                <span class="minus">
+                                    &minus;
+                                </span>
+                                <span class="plus">
+                                    &plus;
+                                </span>
+                            </div>
+                            <div class="faq__content gen__text">
+                                We take pride in our ability to learn the fundamentals of virtually any industry or technology quickly. Some of the markets we have served include green technologies, medical devices, biotechnology, Internet/e-commerce, telecommunications, distance education/e-learning,
+                                real estate… <a href="">view all</a>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__header">
+                                <span>
+                                    4. Can you help us raise money?      
+                                </span>
+                                <span class="minus">
+                                    &minus;
+                                </span>
+                                <span class="plus">
+                                    &plus;
+                                </span>
+                            </div>
+                            <div class="faq__content gen__text">
+                                We take pride in our ability to learn the fundamentals of virtually any industry or technology quickly. Some of the markets we have served include green technologies, medical devices, biotechnology, Internet/e-commerce, telecommunications, distance education/e-learning,
+                                real estate… <a href="">view all</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
             </div>
         </div>
+
     </section>
 
-    <section>
-        <div class="container container__white">
+    <section class="progress__section">
+
+        <div class="progress__container row">
+            <div class="progress">
+
+                <div class="progress-bar-one"></div>
+                <div class="progress-bar-two"></div>
+                <div class="progress-bar-three"></div>
+                <div class="progress-bar-four"></div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="team__section">
+        <div class="container">
             <div class="row">
                 <div class="teams">
                     <h2 class="title">
@@ -192,17 +346,12 @@
                                     Chief Operations Officer
                                 </h4>
                                 <p class="team__content__text">
-                                    Omololu Akinjide Adewalure is the Chief operations officer. He has had 9 <span class="team__content__text__dots">...</span>
-                                    <span class="team__content__text__more">
-                                        years working experience in banking operations. He started his ...
-                                    </span>
+                                    Omololu Akinjide Adewalure is the Chief operations officer. He has had 9 years working experience in banking operations. He started his ...
+                                    <a href="#" class="link modal__link">
+                                        VIEW PROFILE
+                                    </a>
                                 </p>
-                                <a href="#" class="link modal__link">
-                                    VIEW PROFILE
-                                    <span>
-                                        <img class="btn__arrow" src="assets/images/Arrow.svg" alt="">
-                                    </span>
-                                </a>
+
                             </div>
                         </div>
                         <div class="team">
@@ -211,21 +360,18 @@
                                 <h3 class="team__content__title">
                                     Anara Chinyere Grace
                                 </h3>
+
                                 <h4 class="team__content__title__sub">
                                     Head, Operations
                                 </h4>
                                 <p class="team__content__text">
-                                    Grace Anara is the head Banking Operations. She is a customer <span class="team__content__text__dots">...</span>
-                                    <span class="team__content__text__more">
-                                        service expert, with 10 years banking operations experience ...
-                                    </span>
+                                    race Anara is the head Banking Operations. She is a customer service expert, with 10 years banking operations experience. She has functioned ...
+                                    <a href="#" class="link modal__link">
+                                        VIEW PROFILE
+                                        
+                                    </a>
                                 </p>
-                                <a href="#" class="link modal__link">
-                                    VIEW PROFILE
-                                    <span>
-                                        <img class="btn__arrow" src="assets/images/Arrow.svg" alt="">
-                                    </span>
-                                </a>
+
                             </div>
                         </div>
                     </div>
@@ -237,7 +383,7 @@
     <section class="board__section">
         <div class="container">
             <div class="row">
-                <h2 class="title">
+                <h2 class="title title--grey">
                     board of directors
                 </h2>
                 <div class="boards">
@@ -257,14 +403,13 @@
                             </h4>
                             <p class="team__content__text">
                                 Temitope AKINYEMI is an accomplished Financial and Investment Adviser, Transaction Adviser and Public Private Partnership ...
-                            </p>
-                            <a href="#" class="link modal__link">
-                                VIEW PROFILE
-                                <span>
-                                    <img class="btn__arrow" src="assets/images/Arrow.svg" alt="">
-                                </span>
-                            </a>
+                                <a href="#" class="link modal__link">
+                                    VIEW PROFILE
+                                   
+                                </a>
                         </div>
+                        </p>
+
                     </div>
 
                     <div class="board">
@@ -282,13 +427,11 @@
                             </h4>
                             <p class="team__content__text">
                                 Stanley Peters is an accomplished Executive with experience in operations, electronic payments and mobile money solutions ...
+                                <a href="#" class="link modal__link">
+                                    VIEW PROFILE
+                                </a>
                             </p>
-                            <a href="#" class="link modal__link">
-                                VIEW PROFILE
-                                <span>
-                                    <img class="btn__arrow" src="assets/images/Arrow.svg" alt="">
-                                </span>
-                            </a>
+
                         </div>
                     </div>
 
@@ -307,13 +450,12 @@
                             </h4>
                             <p class="team__content__text">
                                 Oluwaseun Peters is an associate member of The Institute of chartered accountants of Nigeria (ICAN) with ...
+                                <a href="#" class="link modal__link">
+                                    VIEW PROFILE
+                                    
+                                </a>
                             </p>
-                            <a href="#" class="link modal__link">
-                                VIEW PROFILE
-                                <span>
-                                    <img class="btn__arrow" src="assets/images/Arrow.svg" alt="">
-                                </span>
-                            </a>
+
                         </div>
                     </div>
 
@@ -324,160 +466,197 @@
     </section>
 
 
-    <section class="testimonials__section">
+    <section class="timeline__section">
 
-        <div class="container">
-
-            <div class="row">
-                <h2 class="title">
-                    TESTIMONIALS
+        <div class="row">
+            <div class="timeline__header">
+                <h2 class="timeline__title">
+                    IMPORTANT MILESTONES
                 </h2>
-                <h3 class="title__sub">
-                    Lets see what our client says
+                <h3 class="timeline__sub title__sub">
+                    Company Timeline
                 </h3>
+                <p class="timeline__paragraph gen__text">
+                    With a community of over 400 million users (and a majority age group being 18 to 29), wouldn’t you want to make sure you’re monitoring what people are posting on social networks?
+                </p>
+
             </div>
 
-            <div class="row">
+            <div class="timeline">
+                <div class="timeline__items">
+                </div>
 
-                <div class="testimonials__wrapper">
-                    <div class="testimonials__container swiper-wrapper">
+                <div class="timeline__items">
 
-                        <div class="testimonials swiper-slide">
-                            <p class="testimonials__text">
-                                Applied for Accelerex stress free loan for an urgent need at close of business on Friday and received credit notification in bank account the same day before the weekend began. Accelerex truly cares. Judith, National Institute for Hospitality & Tourism.
+                    <div class="timeline__item">
+                        <span class="timeline__date-one">
+                            15.01.2018
+                        </span class="timeline__date-two">
+                        <div>
+                            <h3 class="title__sub timeline__sub__head">
+                                Get Your Cash for New Home Purchase
+                            </h3>
+                            <p class="gen__text">
+                                Once all previous steps are done, you are ready to get funds and move into your new home soon!
                             </p>
-
-                            <div class="testimonials__footer">
-                                <img src="assets/images/avatar.png" class="testimonials__avatar" alt=""> Olawuyi Olusola
-                            </div>
-
                         </div>
+                        
+                    </div>
 
-                        <div class="testimonials swiper-slide">
-                            <p class="testimonials__text">
-                                I applied for Accelerex stress free loan for my child school fees and I got the money credited to my account within 5 hrs. Haruna Ibrahim, Abuja </p>
-
-                            <div class="testimonials__footer">
-                                <img src="assets/images/avatar.png" class="testimonials__avatar" alt=""> Olawuyi Olusola
-                            </div>
-
+                    <div class="timeline__item">
+                        <span class="timeline__date-two">
+                            14.01.2018
+                        </span>
+                        <div class="timeline__grp">
+                            <h3 class="title__sub timeline__sub__head">
+                                Get Your Loan Approved
+                            </h3>
+                            <p class="gen__text">
+                                Get all of the paperwork required to complete the purchase, including your loan documents.
+                            </p>
                         </div>
-
-                        <div class="testimonials swiper-slide">
-                            <p class="testimonials__text">
-                                I applied for Accelerex stress free loan for my child school fees and I got the money credited to my account within 5 hrs. Haruna Ibrahim, Abuja </p>
-
-                            <div class="testimonials__footer">
-                                <img src="assets/images/avatar.png" class="testimonials__avatar" alt=""> Olawuyi Olusola
-                            </div>
-
-                        </div>
-
-
 
                     </div>
 
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="timeline__item">
+                        <span class="timeline__date-three">
+                            13.01.2018
+                        </span>
+                        <h2 class="title__sub timeline__sub__head">
+                            Choose Loan Amount
+                        </h2>
+                        <p class="gen__text">
+                            It is recommended to look for homes that cost no more than three to five times their annual household income.
+                        </p>
+                    </div>
                 </div>
-
-
             </div>
-
-
         </div>
 
     </section>
 
 
-    <footer>
+    <section class="app-section__s">
+        <div class="app-section row">
+            <div class="app-section__container">
+                <img src="assets/images/bg-phone-1.png" class="app-section__img" alt="">
+            </div>
+            <div class="app-section__container">
+                <h1 class="title title--grey">
+                    Download our App
+                </h1>
+                <h2 class="title__sub">
+                    Speed Up the Loan Process
+                </h2>
+                <p class="app-section__text">
+                    Stay tuned for the hottest news and the latest updates! With our app you will always have a chance to see new offers and loan rate changes. Use Loan Trust App an stay mobile and trendy!
+                </p>
+                <a href="" class="btn btn--customized">
+                    learn more
+                </a>
+                <a href="" class="btn btn--customized-two">
+                    Download App
+                </a>
+            </div>
+        </div>
+    </section>
 
-        <div class="footer">
-            <div class="row">
-                <form class="footer__form">
-                    <div class="footer__label">
-                        SUBSCRIBE TO OUR NEWSLETTER
-                    </div>
-                    <div class="footer__input__container">
 
-                        <img src="assets/images/env.png" class="footer__input__icon" alt="">
-                        <input class="footer__input" type="email" required placeholder="Enter your email address">
-                        <input type="submit" href="" value="SUBMIT" class="footer__input__submit">
-                    </div>
-                </form>
 
-                <div class="footer__container">
-                    <div class="footer__container__item">
-                        <h3 class="footer__container__title">
-                            Accelerex MICROFINANCE BANK
-                        </h3>
-                        <p class="footer__container__text">
-                            Accelerex Microfinance Bank is founded with focus on the financially unserved and underserved. We are people oriented, with the aim of providing all with basic financial services in an innovative and easily accessible manner.
-                        </p>
-
-                        <div class="footer__social__icons">
-                            <a href="">
-                                <img src="assets/images/google-plus.png" alt="">
-                            </a>
-                            <a href="">
-                                <img src="assets/images/twitter.png" alt="">
-                            </a>
-                            <a href="">
-                                <img src="assets/images/fb.png" alt="">
-                            </a>
-
-                        </div>
-                    </div>
-
-                    <div class="footer__container__item">
-                        <h3 class="footer__container__title">
-                            RELATED LINKS
-                        </h3>
-                        <a href="index.html" class="footer__container__link">Home</a> <br>
-                        <a href="about.html" class="footer__container__link">About</a> <br>
-                        <a href="products.html" class="footer__container__link">Products</a> <br>
-                        <a href="stories.html" class="footer__container__link">Stories</a> <br>
-                        <a href="contact.html" class="footer__container__link">Contact Us</a>
-                    </div>
-
-                    <div class="footer__container__item">
-                        <h3 class="footer__container__title">
-                            CONTACT
-                        </h3>
-                        <div class="footer__container__flex">
-
-                            <img src="assets/images/phone.svg" alt="">
-
-                            <span>
-                                +234 90 2115 9180,<br>+234 81 6710 2409 
-                            </span>
-                        </div>
-                        <div class="footer__container__flex">
-
-                            <img src="assets/images/location.svg" alt="">
-
-                            <span>
-                                contact@Accelerexbank.com
-                            </span>
-                        </div>
-                        <div class="footer__container__flex">
-
-                            <img src="assets/images/mail.svg" alt="">
-
-                            <span>
-                                8 Asaba Close, Off Emeka Anyaoku Street, Area 11 Garki Abuja
-                            </span>
-                        </div>
-                    </div>
+    <section>
+        <div class="brand__section">
+            <div class="row brand">
+                <div class="brand__item">
+                    <img src="assets/images/UBA-logo-2.png" alt="">
                 </div>
+                <div class="brand__item">
+                    <img src="assets/images/credit-clan-logo.png" alt="">
+                </div>
+                <div class="brand__item">
+                    <img src="assets/images/220px-Zenith-Bank-logo.png" alt="">
+                </div>
+                <div class="brand__item">
+                    <img src="assets/images/FirstBank-Master-logos-124-295-SPOT-06-1.png" alt="">
+                </div>
+
             </div>
         </div>
 
-        <div class="row footer__bottom">
-            &copy; &nbsp;&nbsp; COPYRIGHTS, CREDIT CLAN 2020
+    </section>
+
+
+    <footer class="footer">
+
+
+
+        <div class="footer__lower-container">
+            <div class="footer__items row">
+
+                <div class="footer__item">
+                    <h6 class="footer__title">
+                        Location
+                    </h6>
+                    <span>
+                        8 Asaba Close,
+                    </span>
+                    <span>
+                        Off Emeka Anyaoku Street,
+                    </span>
+                    <span>
+                        Area 11 Garki Abuja
+                    </span>
+                </div>
+                <div class="footer__item">
+                    <h6 class="footer__title">
+                        Contacts
+                    </h6>
+                    <span>
+                        +234 90 2115 9180
+                    </span>
+                    <span>
+                        +234 81 6710 2409
+                       </span>
+                    <span>
+                        contact@slsbank.com  
+                    </span>
+                </div>
+                <div class="footer__item">
+                    <h6 class="footer__title">
+                        Follow
+                    </h6>
+                    <a href="" class="footer__icon">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="" class="footer__icon">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="" class="footer__icon">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+
+                </div>
+                <div class="footer__item">
+                    <h6 class="footer__title">
+                        Location
+                    </h6>
+                    <span>
+                        &copy; 2020 Accelerex. All rights reserved.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer__copy">
+            <div class="row">
+                &copy; 2020 Accelerex. All rights reserved.
+            </div>
         </div>
 
     </footer>
+
 
     <div class="modal">
 
@@ -629,10 +808,93 @@
         </div>
 
     </div>
+
+    <script>
+        let aboutHeroNav = document.querySelectorAll('.about-hero__nav');
+        aboutHeroNav[1].addEventListener('click', (e) => {
+            e.preventDefault();
+        })
+    </script>
+
+
     <!-- build:js assets/scripts/App.js -->
     <script src="temp/scripts/App.js"></script>
     <!-- endbuild -->
 
+    <script>
+        var scaleUp = {
+            scale: 0,
+            // origin: 'bottom',
+            viewFactor: 1,
+            duration: 1200,
+        };
+
+
+
+        var slideInLeft = {
+            distance: '50%',
+            origin: 'left',
+            viewFactor: 1,
+            opacity: 0,
+            duration: 2000,
+            delay: 200
+        };
+
+        var slideInRight = {
+            distance: '50%',
+            origin: 'left',
+            viewFactor: .5,
+            opacity: 0,
+            duration: 2000,
+            delay: 200
+        };
+
+        var fadedIn = {
+            scale: 0,
+            viewFactor: .3,
+            duration: 2000
+        };
+
+        var slideInDown = {
+            distance: '50%',
+            origin: 'top',
+            viewFactor: 0,
+            opacity: 0,
+            duration: 2000,
+            delay: 200
+        };
+
+        var slideInUp = {
+            distance: '40%',
+            origin: 'bottom',
+            viewFactor: 1,
+            opacity: 0,
+            duration: 1000,
+            delay: 200
+        };
+        var slideInUpNo = {
+            distance: '100%',
+            origin: 'bottom',
+            viewFactor: 1,
+            opacity: .5,
+            duration: 1000,
+            delay: 200
+        };
+
+
+
+
+
+        ScrollReveal().reveal(".about-detail", slideInUp);
+        ScrollReveal().reveal(".about-section__img", scaleUp);
+        ScrollReveal().reveal(".gen__text", slideInLeft);
+        ScrollReveal().reveal(".about-content__item", slideInUp);
+        ScrollReveal().reveal(".team", slideInDown);
+        ScrollReveal().reveal(".board__container", slideInDown);
+        ScrollReveal().reveal(".timeline__item", slideInDown);
+        ScrollReveal().reveal(".app-section__img", scaleUp);
+        ScrollReveal().reveal(".app-section__container:nth-child(2)", slideInRight);
+    </script>
 
 
 </body>
