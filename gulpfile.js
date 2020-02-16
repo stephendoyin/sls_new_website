@@ -11,4 +11,4 @@ exports.watch = series('watch',
 );
 
 
-exports.build = series('deleteDistFolder', 'copyGeneralFiles', series('styles', 'scripts', 'imagemin', 'usemin'))
+exports.build = series('deleteDistFolder', 'copyGeneralFiles', 'imagemin', series('styles', 'scripts', 'usemin'))
