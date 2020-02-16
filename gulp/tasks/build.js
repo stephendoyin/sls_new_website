@@ -43,7 +43,7 @@ gulp.task('copyGeneralFiles', function() {
 });
 
 gulp.task('imagemin', function() {
-    gulp.src('./app/assets/images/**')
+    gulp.src(['./app/assets/images/**', '!./app/assets/images/svg/*/**'])
         .pipe(imagemin())
         .pipe(gulp.dest("./dist/asset/images"));
 })

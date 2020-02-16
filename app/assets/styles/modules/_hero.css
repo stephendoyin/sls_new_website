@@ -34,17 +34,17 @@
 @media only screen and (max-width: 780px) {
     .header__slider__inner.fourth {
         background: url(../../assets/images/heroo.jpg);
-        background-position: center;
+        background-position: top right;
         background-size: cover;
     }
     .header__slider__inner.fifth {
         background: url(../../assets/images/heroo-two.jpg);
-        background-position: center;
+        background-position: top right;
         background-size: cover;
     }
     .header__slider__inner.sixth {
         background: url(../../assets/images/herooo.jpg);
-        background-position: center;
+        background-position: top right;
         background-size: cover;
     }
 }

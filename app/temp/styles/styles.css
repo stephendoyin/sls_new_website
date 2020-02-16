@@ -740,12 +740,20 @@ body.fixed {
         width: 100%;
     }
 
+@media only screen and (min-width: 780px) {
+    .header-content__title {
+        font-size: 3.6rem;
+        line-height: 5rem;
+        font-weight: 500;
+    }
+}
+
 @media only screen and (min-width: 1100px) {
     .header-content>div:last-child {
         display: initial;
     }
     .header-content>div:nth-child(1) {
-        width: 60%;
+        width: 90%;
         padding-right: 4%
     }
     .header-content>div:nth-child(2) {
@@ -2637,17 +2645,17 @@ body.fixed {
 @media only screen and (max-width: 780px) {
     .header__slider__inner.fourth {
         background: url(../../assets/images/heroo.jpg);
-        background-position: center;
+        background-position: top right;
         background-size: cover;
     }
     .header__slider__inner.fifth {
         background: url(../../assets/images/heroo-two.jpg);
-        background-position: center;
+        background-position: top right;
         background-size: cover;
     }
     .header__slider__inner.sixth {
         background: url(../../assets/images/herooo.jpg);
-        background-position: center;
+        background-position: top right;
         background-size: cover;
     }
 }

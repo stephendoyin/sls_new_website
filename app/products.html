@@ -24,6 +24,8 @@
     </script>
     <!-- endbuild -->
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 
 
@@ -280,7 +282,7 @@
                 </div>
                 <form>
                     <div class="form__inner">
-                        <input type="text" placeholder="Enter your email">
+                        <input required type="text" placeholder="Enter your email">
                         <button type="submit">
                             SUSCRIBE
                         </button>
@@ -607,6 +609,23 @@
         </div>
 
     </div>
+
+    <script>
+        var slideInUp = {
+            distance: '40%',
+            origin: 'bottom',
+            viewFactor: 1,
+            opacity: 0,
+            duration: 1000,
+            delay: 200
+        };
+
+
+
+
+
+        ScrollReveal().reveal(".product", slideInUp);
+    </script>
 
     <!-- build:js assets/scripts/App.js -->
     <script src="temp/scripts/App.js"></script>
