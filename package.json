@@ -13,6 +13,7 @@
     "del": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.2.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-modernizr": "^3.3.0",
     "gulp-postcss": "^8.0.0",
     "gulp-rev": "^9.0.0",

@@ -6,9 +6,9 @@ require('./gulp/tasks/watch');
 require('./gulp/tasks/build');
 
 
-exports.watch = series('watch', 
-  series(series('styles', 'cssInject'), series(series('modernizr', 'scripts'), 'scriptsRefresh'))
+exports.watch = series('watch',
+    series(series('styles', 'cssInject'), series(series('modernizr', 'scripts'), 'scriptsRefresh'))
 );
 
 
-exports.build = series('deleteDistFolder', 'copyGeneralFiles', series('styles', 'scripts', 'usemin'))
+exports.build = series('deleteDistFolder', 'copyGeneralFiles', series('styles', 'scripts', 'imagemin', 'usemin'))

@@ -5,7 +5,8 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     browserSync = require('browser-sync').create(),
     cleanCSS = require('gulp-clean-css'),
-    { series } = require('gulp');
+    { series } = require('gulp'),
+    imagemin = require('gulp-imagemin');
 
 
 gulp.task('previewDist', function() {
@@ -30,7 +31,7 @@ gulp.task('copyGeneralFiles', function() {
         '!./app/stories.html',
         '!./app/products.html',
         '!./app/faq.html',
-        // '!./app/assets/images/**/*',
+        '!./app/assets/images/**/*',
         '!./app/assets/styles/**/*',
         '!./app/assets/scripts/**/*',
         '!./app/temp',
@@ -40,6 +41,12 @@ gulp.task('copyGeneralFiles', function() {
     return gulp.src(pathsToCopy)
         .pipe(gulp.dest("./dist"));
 });
+
+gulp.task('imagemin', function() {
+    gulp.src('./app/assets/images/**')
+        .pipe(imagemin())
+        .pipe(gulp.dest("./dist/asset/images"));
+})
 
 gulp.task('usemin', function() {
     return gulp.src(["./app/index.html", "./app/about.html", "./app/contact.html", "./app/stories.html", "./app/products.html", "./app/contact.html", "./app/stories.html", "./app/faq.html"])
