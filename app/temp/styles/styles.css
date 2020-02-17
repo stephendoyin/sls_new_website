@@ -743,8 +743,8 @@ body.fixed {
 @media only screen and (min-width: 780px) {
     .header-content__title {
         font-size: 3.6rem;
-        line-height: 5rem;
-        font-weight: 500;
+        line-height: 4rem;
+        font-weight: 700;
     }
 }
 

@@ -57,7 +57,7 @@ task('watch', function(cb) {
 
     watch('./app/assets/scripts/**/*.js', series(series('modernizr', 'scripts'), 'scriptsRefresh'));
 
-
+    cb();
 
 
 });
