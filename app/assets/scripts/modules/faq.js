@@ -4,7 +4,13 @@ class Faq {
         this.faqHeader = document.querySelectorAll('.faq__header');
         this.faqItem = document.querySelectorAll('.faq__item');
         this.animHeight();
+        this.triggerEvent();
+    }
 
+    triggerEvent() {
+        window.addEventListener('resize', () => {
+            this.animHeight();
+        })
     }
 
     animHeight() {
@@ -14,6 +20,7 @@ class Faq {
             element.addEventListener('click', (e) => {
                 this.changeHeight(e, i)
             });
+            // console.log(element.clientHeight, 'is')
         });
     }
 
@@ -22,7 +29,7 @@ class Faq {
             if (i !== x) {
                 this.faqItem[x].style.height = `${this.faqHeader[x].clientHeight}px`;
                 this.faqHeader[x].classList.remove("active");
-            } else if (element.clientHeight > 75) {
+            } else if ((i === x) && (element.clientHeight > (this.faqHeader[x].clientHeight + 2))) {
                 element.style.height = `${this.faqHeader[x].clientHeight}px`;
                 this.faqHeader[i].classList.remove("active");
             } else {
