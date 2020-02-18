@@ -130,3 +130,7 @@ body.fixed {
         width: 1440px;
     }
 }
+
+.logo {
+    height: 80px;
+}

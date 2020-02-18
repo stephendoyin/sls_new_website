@@ -491,6 +491,10 @@ body.fixed {
     }
 }
 
+.logo {
+    height: 80px;
+}
+
 .header {
     height: 100vh;
     width: 100%;
