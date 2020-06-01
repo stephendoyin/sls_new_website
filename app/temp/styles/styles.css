@@ -2646,6 +2646,18 @@ body.fixed {
     background-size: cover;
 }
 
+.header__slider__inner.seventh {
+    background: url(../../assets/images/f-bg.jpg);
+    background-position: top center;
+    background-size: cover;
+}
+
+.header__slider__inner.eighth {
+    background: url(../../assets/images/eighth.jpg);
+    background-position: top center;
+    background-size: cover;
+}
+
 @media only screen and (max-width: 780px) {
     .header__slider__inner.fourth {
         background: url(../../assets/images/heroo.jpg);

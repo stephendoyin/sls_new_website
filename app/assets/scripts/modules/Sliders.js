@@ -18,13 +18,9 @@ class Slider {
         if (!(isNull(this.siema))) {
             this.startsLiderTwo();
             this.makeTEqualHeight();
-
         }
 
-
-        this.trh =
-            this.tlh = document.querySelector(".testimonials__left-handle")
-
+        this.tlh = document.querySelector(".testimonials__left-handle")
     }
 
     startsLider() {
