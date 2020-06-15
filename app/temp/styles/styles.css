@@ -1573,6 +1573,11 @@ body.fixed {
     visibility: hidden;
 }
 
+.footer__link{
+        color: #fff;
+        text-decoration: none;
+    }
+
 .footer__container {
         display: -webkit-box;
         display: flex;
@@ -4101,4 +4106,32 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 
 .faq-section div.about-content__item {
         width: 100%;
+    }
+
+.terms{
+    background: #fff;
+}
+
+.terms__text{
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 4rem 0;
+    }
+
+.terms__text .title__sub{
+            padding: 0 0 1rem 0;
+        }
+
+.terms__text p{
+            font-size: 1.1rem;
+            font-family: Lato, sans-serif;
+            line-height: 1.7rem;
+            color: #42474c;
+            font-weight: 300;
+            padding-bottom: 1rem;
+        }
+
+.terms__em{
+        font-weight: 500;
+        font-style: italic;
     }

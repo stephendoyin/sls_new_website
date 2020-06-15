@@ -30,6 +30,7 @@ gulp.task('copyGeneralFiles', function() {
         '!./app/contact.html',
         '!./app/stories.html',
         '!./app/products.html',
+        '!./app/terms.html',
         '!./app/faq.html',
         '!./app/assets/images/*',
         '!./app/assets/styles/**/*',
@@ -49,7 +50,7 @@ gulp.task('imagemin', function() {
 })
 
 gulp.task('usemin', function() {
-    return gulp.src(["./app/index.html", "./app/about.html", "./app/contact.html", "./app/stories.html", "./app/products.html", "./app/contact.html", "./app/stories.html", "./app/faq.html"])
+    return gulp.src(["./app/index.html", "./app/about.html", "./app/contact.html", "./app/stories.html", "./app/products.html", "./app/contact.html", "./app/stories.html", "./app/faq.html", "./app/terms.html"])
         .pipe(usemin({
             css: [
                 function() {
